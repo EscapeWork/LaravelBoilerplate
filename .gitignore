@@ -1,0 +1,7 @@
+thumbs.db
+.DS_Store
+*.zip
+/vendor
+bootstrap/compiled.php
+/node_modules
+.sass_cache

@@ -1,0 +1,10 @@
+{
+    "devDependencies" : {
+        "grunt-contrib-coffee" : "*",
+        "grunt-contrib-sass" : "*",
+        "grunt-contrib-uglify" : "*",
+        "grunt-contrib-watch" : "*",
+        "grunt-contrib-concat" : "*",
+        "grunt" : "~0.4.1"
+    }
+}

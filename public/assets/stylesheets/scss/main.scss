@@ -1,0 +1,17 @@
+// ========================================================================
+// Estilos principais do site
+// ======================================================================== 
+html, body {
+    padding: 0;
+    margin: 0;
+    background: #475660;
+}
+
+    .container {
+        width: 955px;
+        margin: 0 auto;
+    }
+        .header {
+            height: 198px;
+            background: url('/assets/img/banner.jpg') no-repeat center;
+        }
