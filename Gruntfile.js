@@ -22,7 +22,7 @@ module.exports = function(grunt) {
         sass : {
             dist : {
                 files : {
-                    'public/assets/stylesheets/css/main.css' : [ 'public/assets/style/scss/main.scss' ],
+                    'public/assets/stylesheets/css/main.css' : [ 'public/assets/stylesheets/scss/main.scss' ],
                 }
             }, options : {
                 compass : true,
