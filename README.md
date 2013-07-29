@@ -2,7 +2,7 @@
 
 This is a personal Laravel Bootstrap, by Escape Criativação.
 
-## Installing
+## Starting
 
 For start to use `Laravel Bootstrap` you have to use [npm](https://npmjs.org/) and [composer](http://getcomposer.org/).
 
