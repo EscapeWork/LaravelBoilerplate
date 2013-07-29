@@ -28,7 +28,7 @@ return array(
 	|
 	*/
 
-	'model' => 'EscapeWork\Manager\Model\User',
+	'model' => 'User',
 
 	/*
 	|--------------------------------------------------------------------------
