@@ -7,8 +7,10 @@ This is a personal Laravel Bootstrap, by Escape Criativação.
 For start to use `Laravel Bootstrap` you have to use [npm](https://npmjs.org/) and [composer](http://getcomposer.org/).
 
 1. `npm install` to use [`grunt`](http://gruntjs.com/)
-2. `composer install` to start [`Laravel`](http://laravel.com/)
-3. Have fun developing!
+2. `grunt` will run the following commands: `coffee`, `sass`, `uglify` and `watch` (to watch changes on coffee and sass files) - It's commented the `concat` command, you can use it to cancat vendor files.
+3. `composer install` to start [`Laravel`](http://laravel.com/)
+4. `php artisan key:generate` to use laravel encrypt code
+5. Have fun developing!
 
 ## License
 
