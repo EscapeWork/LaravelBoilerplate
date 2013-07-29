@@ -7,7 +7,7 @@
         <title>Laravel Bootstrap</title>
         @show
 
-        <link rel="stylesheet" href="/assets/style/css/main.css" type="text/css">
+        <link rel="stylesheet" href="/assets/stylesheets/css/main.css" type="text/css">
 
         @section('styles')
 
