@@ -2,9 +2,17 @@
 
 This is a personal Laravel Bootstrap, by Escape Criativação.
 
-# License
+## Installing
 
-## The MIT License (MIT)
+For start to use `Laravel Bootstrap` you have to use [npm](https://npmjs.org/) and [composer](http://getcomposer.org/).
+
+1. `npm install` to use [`grunt`](http://gruntjs.com/)
+2. `composer install` to start [`Laravel`](http://laravel.com/)
+3. Have fun developing!
+
+## License
+
+### The MIT License (MIT)
 
 Copyright (c) 2013 Escape Criativação LTDA
 
