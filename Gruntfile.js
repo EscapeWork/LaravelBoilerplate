@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        
         coffee : {
             compile : {
                 files : {
@@ -29,17 +30,6 @@ module.exports = function(grunt) {
                 style: 'compressed'
             }
         },
-
-        // concat : {
-        //     css: {
-        //         src: [
-        //             'public/assets/css/vendor/modal/jquery.modal.css',
-        //             'public/assets/css/vendor/slide/jquery.slide.css',
-        //             'public/assets/css/vendor/fancybox/jquery.fancybox.css'
-        //         ],
-        //         dest: 'public/assets/css/vendor/vendor.min.css'
-        //     }
-        // },
 
         watch : {
             coffee : {
