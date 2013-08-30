@@ -1,11 +1,11 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        
+
         coffee : {
             compile : {
                 files : {
-                    'public/assets/javascripts/js/main.min.js' : [ 
+                    'public/assets/javascripts/js/main.js' : [
                         'public/assets/javascripts/coffee/main.coffee'
                     ]
                 }
@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 
         uglify : {
             my_target : {
-                files : { 
+                files : {
                     'public/assets/javascripts/js/main.min.js' : [ 'public/assets/javascripts/js/main.min.js' ]
                 }
             }
@@ -43,13 +43,12 @@ module.exports = function(grunt) {
         }
 
     });
-    
+
     grunt.loadNpmTasks('grunt-contrib-coffee');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-concat');
-   
-    grunt.registerTask('default', ['coffee', 'sass', 'uglify', 'watch']);
 
+    grunt.registerTask('default', ['coffee', 'uglify', 'sass', 'watch']);
 }

@@ -3,5 +3,5 @@
 /vendor
 bootstrap/compiled.php
 /node_modules
-.sass_cache
+.sass-cache/
 thumbs.db

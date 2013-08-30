@@ -1,35 +1,34 @@
 <!doctype html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        
-        @section('title')
+<head>
+    <meta charset="UTF-8" />
+
+    @section('seo')
         <title>Laravel Bootstrap</title>
-        @show
+    @show
 
-        <link rel="stylesheet" href="/assets/stylesheets/css/main.css" type="text/css">
+    @section('styles')
+        <link rel="stylesheet" type="text/css" href="{{ asset('assets/stylesheets/css/main.css') }}" />
+    @show
 
-        @section('styles')
+    <script type="text/javascript" src="{{ asset('assets/javascripts/js/vendor/modernizr.js') }"></script>
+</head>
+<body>
+    <header class="header">
 
-        @show
+    </header><!-- .header -->
 
-    </head>
-    <body>
-        <header class="container container-header">
-                        
-        </header>
+    <section class="content">
+        @yield('content')
+    </section><!-- .content -->
 
-        <section class="container">
-            @yield('content')
-        </section>
+    <footer class="footer">
 
-        <footer class="container container-footer">
-            
+    </footer><!-- .footer -->
 
-        </footer>
-        
-        @section('javascripts')
-
-        @show
-    </body>
+    @section('scripts')
+        <script type="text/javascript" src="{{ asset('assets/javascripts/js/vendor/jquery.js') }"></script>
+        <script type="text/javascript" src="{{ asset('assets/javascripts/js/main.min.js') }"></script>
+    @show
+</body>
 </html>

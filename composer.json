@@ -1,10 +1,16 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
-	"keywords": ["framework", "laravel"],
+	"name": "escape/laravel-bootstrap",
+	"description": "A little bootstrap with SASS and Coffeescript provided by Escape Criativação.",
+
 	"require": {
 		"laravel/framework": "4.0.*"
-	}, 
+	},
+
+    "require-dev": {
+        "phpunit/phpunit": "@stable",
+        "mockery/mockery": "@stable"
+    },
+
 	"autoload": {
 		"classmap": [
 			"app/commands",
@@ -15,6 +21,7 @@
 			"app/tests/TestCase.php"
 		]
 	},
+
 	"scripts": {
 		"post-install-cmd": [
 			"php artisan optimize"
@@ -29,8 +36,10 @@
 			"php artisan key:generate"
 		]
 	},
+
 	"config": {
 		"preferred-install": "dist"
 	},
+
 	"minimum-stability": "dev"
 }

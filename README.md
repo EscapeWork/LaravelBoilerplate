@@ -8,21 +8,26 @@ This is a personal Laravel Bootstrap, by Escape Criativação.
 * [SASS](http://sass-lang.com/) with [Compass](http://compass-style.org/);
 * [Coffeescript](http://coffeescript.org/);
 * [Normalize CSS](http://necolas.github.io/normalize.css/);
+* [jQuery](http://jquery.com/);
+* [Modernizr](http://modernizr.com/);
 
 ### Configuration
 
 For start to use `Laravel Bootstrap` you have to use [npm](https://npmjs.org/) and [composer](http://getcomposer.org/).
 
-1. `$ composer install` to install PHP dependencies;
-2. `$ npm install` to install node dependencies;
-3. `$ php artisan key:generate` to generate laravel encrypt code;
-4. `$ grunt` for watching the changes in the `.scss` and `.coffee` files;
-5. Have fun developing!
+- `$ composer install` to install PHP dependencies;
+- `$ npm install` to install node dependencies;
+- `$ php artisan key:generate` to generate laravel encrypt code;
+- Point your web server to the Laravel `public` folder;
+- `$ grunt` for watching the changes in the `.scss` and `.coffee` files;
+- Have fun developing!
 
 **Note:** SASS and Compass are Ruby gems, so you will have to install this gems.
 
 * `$ [sudo] gem install sass`
 * `$ [sudo] gem install compass`
+
+***
 
 ### License
 
