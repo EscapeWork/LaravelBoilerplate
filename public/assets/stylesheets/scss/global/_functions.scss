@@ -1,0 +1,18 @@
+// ==================================================================
+// SASS Functions
+// ==================================================================
+
+@import "compass";
+
+// opacity
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    -moz-opacity: $opacity;
+    filter: alpha(opacity= #{$opacity * 100});
+}
+
+// criando um gradiente e um fallback para browsers que não suportam
+@mixin gradient($cor1, $cor2, $direction: top) {
+    background-color: $cor2;
+    @include background-image(linear-gradient($direction, $cor1, $cor2));
+}
