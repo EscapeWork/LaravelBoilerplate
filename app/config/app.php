@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://localhost',
+	'url' => 'http://yoursite.com.br',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -114,8 +114,6 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
-		'EscapeWork\Manager\ManagerServiceProvider', 
-		'EscapeWork\Msg\Laravel\MsgServiceProvider',
 	),
 
 	/*
@@ -180,10 +178,10 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-		
+
 	    'Eloquent'        => 'EscapeWork\LaravelHelpers\Eloquent',
-	    'Msg'             => 'EscapeWork\Msg\Msg', 
-	    'Check'           => 'EscapeWork\Manager\Check', 
+	    'Msg'             => 'EscapeWork\Msg\Msg',
+	    'Check'           => 'EscapeWork\Manager\Check',
 	),
 
 );
