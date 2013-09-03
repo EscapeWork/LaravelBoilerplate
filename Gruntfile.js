@@ -36,6 +36,7 @@ module.exports = function(grunt) {
                 files : [ 'public/assets/javascripts/coffee/**/*.coffee' ],
                 tasks: ['coffee', 'uglify']
             },
+
             sass : {
                 files : [ 'public/assets/stylesheets/scss/**/*.scss' ],
                 tasks: ['sass']
