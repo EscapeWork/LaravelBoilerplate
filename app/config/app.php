@@ -179,9 +179,6 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
 
-	    'Eloquent'        => 'EscapeWork\LaravelHelpers\Eloquent',
-	    'Msg'             => 'EscapeWork\Msg\Msg',
-	    'Check'           => 'EscapeWork\Manager\Check',
 	),
 
 );
