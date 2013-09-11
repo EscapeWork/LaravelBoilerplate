@@ -1,0 +1,43 @@
+build_settings:
+    ignore:
+        - "vendor"
+        - "tests"
+    mysql:
+        host: "localhost"
+        user: "root"
+        pass: ""
+    campfire:
+        url: "https://youraccount.campfirenow.com"
+        authToken: "605b32dd"
+        roomId: "570102"
+setup:
+    mysql:
+        - "DROP DATABASE IF EXISTS test;"
+        - "CREATE DATABASE test;"
+        - "GRANT ALL PRIVILEGES ON test.* TO test@'localhost' IDENTIFIED BY 'test';"
+    composer:
+        action: "install"
+
+test:
+    php_unit:
+        config:
+            - "PHPUnit-all.xml"
+            - "PHPUnit-ubuntu-fix.xml"
+        directory:
+            - "tests/"
+        run_from: "phpunit/"
+    php_mess_detector:
+        allow_failures: true
+    php_code_sniffer:
+        standard: "PSR2"
+    php_cpd:
+        allow_failures: true
+    grunt:
+        task: "build"
+
+complete:
+    mysql:
+        - "DROP DATABASE IF EXISTS test;"
+failure:
+    campfire:
+        message: "Phpci : build failed."
