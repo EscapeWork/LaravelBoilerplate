@@ -5,3 +5,4 @@ bootstrap/compiled.php
 /node_modules
 .sass-cache/
 thumbs.db
+public/files
