@@ -1,13 +1,13 @@
 # Arquivo de configuração do Compass para o EscapeWork (a partir de versão 1.3, que contém o sass)
 # Versões anteriores vão precisar criar e cofigurar os diretórios do sass e css
-# Author: Luís Dalmolin <luis@escape.ppg.br> 
+# Author: Luís Dalmolin <luis@escape.ppg.br>
 
 # Require any additional compass plugins here.
 
 # Set this to the root of your project when deployed:
 http_path                  = ""
-css_dir                    = "public/assets/css"
-sass_dir                   = "public/assets/css/scss"
+css_dir                    = "public/assets/stylesheets/css"
+sass_dir                   = "public/assets/stylesheets/scss"
 images_dir                 = "public/assets/images/"
 http_generated_images_path = "/assets/images/"
 javascripts_dir            = "public/assets/javascripts/js"

@@ -1,7 +1,7 @@
 {
     "devDependencies" : {
         "grunt-contrib-coffee" : "*",
-        "grunt-contrib-sass" : "*",
+        "grunt-contrib-compass" : "*",
         "grunt-contrib-uglify" : "*",
         "grunt-contrib-watch" : "*",
         "grunt-contrib-concat" : "*",

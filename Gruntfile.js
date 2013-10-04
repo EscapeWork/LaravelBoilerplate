@@ -20,14 +20,11 @@ module.exports = function(grunt) {
             }
         },
 
-        sass : {
-            dist : {
-                files : {
-                    'public/assets/stylesheets/css/main.css' : [ 'public/assets/stylesheets/scss/main.scss' ],
+        compass: {
+            dist: {
+                options: {
+                    config: 'config.rb'
                 }
-            }, options : {
-                compass : true,
-                style: 'compressed'
             }
         },
 
@@ -39,17 +36,17 @@ module.exports = function(grunt) {
 
             sass : {
                 files : [ 'public/assets/stylesheets/scss/**/*.scss' ],
-                tasks: ['sass']
+                tasks: ['compass']
             }
         }
 
     });
 
     grunt.loadNpmTasks('grunt-contrib-coffee');
-    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-concat');
 
-    grunt.registerTask('default', ['coffee', 'uglify', 'sass', 'watch']);
+    grunt.registerTask('default', ['coffee', 'uglify', 'compass', 'watch']);
 }
