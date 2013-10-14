@@ -15,7 +15,7 @@ module.exports = function(grunt) {
         uglify : {
             my_target : {
                 files : {
-                    'public/assets/javascripts/js/main.min.js' : [ 'public/assets/javascripts/js/main.js' ]
+                    'public/assets/javascripts/js/main.min.js' : ['public/assets/javascripts/js/main.js']
                 }
             }
         },
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
 
         watch : {
             coffee : {
-                files : [ 'public/assets/javascripts/coffee/**/*.coffee' ],
+                files : ['public/assets/javascripts/coffee/**/*.coffee'],
                 tasks: ['coffee', 'uglify']
             },
 
