@@ -14,3 +14,8 @@ Route::get('/', array('as' => 'home', function()
 {
     return View::make('home.home');
 }));
+
+App::error(function(Symfony\Component\HttpKernel\Exception\NotFoundHttpException $exception)
+{
+    return View::make('site.errors.404');
+});

@@ -5,7 +5,7 @@
 
     @section('seo')
         <title>Laravel Bootstrap</title>
-        <link rel="canonical" href="" />
+        <link rel="canonical" href="{{ route('home') }}" />
     @show
 
     @section('styles')
