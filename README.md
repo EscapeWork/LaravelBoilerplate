@@ -10,6 +10,7 @@ This is a personal Laravel Bootstrap, by Escape Criativação.
 * [Normalize CSS](http://necolas.github.io/normalize.css/);
 * [jQuery](http://jquery.com/);
 * [Modernizr](http://modernizr.com/);
+* [HTML5 Boilerplate](http://html5boilerplate.com/);
 
 ### Configuration
 
