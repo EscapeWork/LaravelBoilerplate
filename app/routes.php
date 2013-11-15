@@ -12,7 +12,7 @@
 
 Route::get('/', array('as' => 'home', function()
 {
-    return View::make('home.home');
+    return View::make('site.home');
 }));
 
 App::error(function(Symfony\Component\HttpKernel\Exception\NotFoundHttpException $exception)
