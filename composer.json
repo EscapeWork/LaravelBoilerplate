@@ -3,7 +3,8 @@
 	"description": "A little bootstrap with SASS and Coffeescript provided by Escape Criativação.",
 
 	"require": {
-		"laravel/framework": "4.0.*"
+		"laravel/framework": "4.0.*",
+        "escapework/laravelhelpers": "0.5.*"
 	},
 
     "require-dev": {
