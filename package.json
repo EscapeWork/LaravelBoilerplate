@@ -5,6 +5,6 @@
         "grunt-contrib-uglify" : "*",
         "grunt-contrib-watch" : "*",
         "grunt-contrib-concat" : "*",
-        "grunt" : "~0.4.1"
+        "grunt" : "~0.4.2"
     }
 }
