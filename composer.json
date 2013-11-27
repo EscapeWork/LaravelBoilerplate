@@ -1,6 +1,7 @@
 {
 	"name": "escape/laravel-bootstrap",
 	"description": "A little bootstrap with SASS and Coffeescript provided by Escape Criativação.",
+    "license": "MIT",
 
 	"require": {
 		"laravel/framework": "4.0.*",
@@ -34,7 +35,8 @@
 			"php artisan optimize"
 		],
 		"post-create-project-cmd": [
-			"php artisan key:generate"
+			"php artisan key:generate",
+            "npm install"
 		]
 	},
 

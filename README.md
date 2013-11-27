@@ -1,32 +1,40 @@
 # Laravel Bootstrap
 
-This is a personal Laravel Bootstrap, by Escape Criativação.
+This is a personal Laravel Bootstrap, by [Escape Criativação](http://www.escape.ppg.br).
+
+### Installation
+
+```sh
+$ composer create-project escape/laravel-bootstrap your-project-name
+```
+
+This command will:
+
+* Clone this repository;
+* Install composer dependencies;
+* Install npm dependencies;
+* Generate Laravel key;
+
+### Assets
+
+This bootstrap utilizes [SASS](http://sass-lang.com/), [Compass](http://compass-style.org/) and [CoffeeScript](http://coffeescript.org/). So you will need:
+
+* [NodeJS](http://nodejs.org/)
+  * [Grunt](http://gruntjs.com/) `$ npm install -g grunt-cli`
+* [Ruby](https://www.ruby-lang.org/)
+  * [SASS](http://sass-lang.com/) `$ gem install sass`
+  * [Compass](http://compass-style.org/) `$ gem install compass`
 
 ### Components
 
 * [Laravel 4](http://laravel.com/)
+* [LaravelHelpers](https://github.com/EscapeWork/LaravelHelpers)
 * [SASS](http://sass-lang.com/) with [Compass](http://compass-style.org/);
 * [Coffeescript](http://coffeescript.org/);
 * [Normalize CSS](http://necolas.github.io/normalize.css/);
 * [jQuery](http://jquery.com/);
 * [Modernizr](http://modernizr.com/);
-* [HTML5 Boilerplate](http://html5boilerplate.com/);
-
-### Configuration
-
-For start to use `Laravel Bootstrap` you have to use [npm](https://npmjs.org/) and [composer](http://getcomposer.org/).
-
-- `$ composer install` to install PHP dependencies;
-- `$ npm install` to install node dependencies;
-- `$ php artisan key:generate` to generate laravel encrypt code;
-- Point your web server to the Laravel `public` folder;
-- `$ grunt` for watching the changes in the `.scss` and `.coffee` files;
-- Have fun developing!
-
-**Note:** SASS and Compass are Ruby gems, so you will have to install this gems.
-
-* `$ [sudo] gem install sass`
-* `$ [sudo] gem install compass`
+* [HTML5 Boilerplate](http://html5boilerplate.com/).
 
 ***
 
