@@ -15,6 +15,8 @@ This command will:
 * Install npm dependencies;
 * Generate Laravel key;
 
+***
+
 ### Assets
 
 This bootstrap utilizes [SASS](http://sass-lang.com/), [Compass](http://compass-style.org/) and [CoffeeScript](http://coffeescript.org/). So you will need:
@@ -36,6 +38,7 @@ $ grunt
 ##### SCSS
 
 public/stylesheets/scss
+```
 ├── main.scss (import all the files in the tree)
 ├── components
 │   ├── _normalize.scss
@@ -47,17 +50,22 @@ public/stylesheets/scss
 ├── global
 │   ├── _variables.scss
 │   └── _functions.scss
+```
 
 All this files compile to the `public/stylesheets/css` folder.
 
 ##### CoffeeScript
 
 public/javascripts/coffee
+```
 ├── main.coffee
+```
 
 All this files compile to the `public/javascripts/js` folder.
 
 If you add mode `.coffee` files, you will need to go to the `Gruntfile.js` and add this file.
+
+***
 
 ### Components
 
