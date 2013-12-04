@@ -39,14 +39,13 @@ module.exports = function(grunt) {
                 tasks: ['compass']
             }
         }
-
     });
 
     grunt.loadNpmTasks('grunt-contrib-coffee');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-notify');
 
     grunt.registerTask('default', ['coffee', 'uglify', 'compass', 'watch']);
 }

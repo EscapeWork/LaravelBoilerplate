@@ -4,7 +4,7 @@
         "grunt-contrib-compass" : "*",
         "grunt-contrib-uglify" : "*",
         "grunt-contrib-watch" : "*",
-        "grunt-contrib-concat" : "*",
+        "grunt-notify": "*",
         "grunt" : "~0.4.2"
     }
 }
