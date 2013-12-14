@@ -63,7 +63,7 @@ public/javascripts/coffee
 
 All this files compile to the `public/javascripts/js` folder.
 
-If you add mode `.coffee` files, you will need to go to the `Gruntfile.js` and add this file.
+If you add more `.coffee` files, you will need to go to the `Gruntfile.js` and add this file.
 
 ***
 
