@@ -1,6 +1,7 @@
 {
 	"name": "escape/laravel-bootstrap",
 	"description": "A little bootstrap with SASS and Coffeescript provided by Escape Criativação.",
+    "keywords": ["laravel", "bootstrap"],
     "license": "MIT",
 
 	"require": {
@@ -26,12 +27,11 @@
 
 	"scripts": {
 		"post-install-cmd": [
+            "php artisan clear-compiled",
 			"php artisan optimize"
 		],
-		"pre-update-cmd": [
-			"php artisan clear-compiled"
-		],
 		"post-update-cmd": [
+            "php artisan clear-compiled",
 			"php artisan optimize"
 		],
 		"post-create-project-cmd": [
@@ -44,12 +44,11 @@
 		"preferred-install": "dist"
 	},
 
+	"minimum-stability": "stable",
+
     "extra": {
         "branch-alias": {
-            "dev-master": "0.1.*-dev"
+            "dev-master": "0.2.*-dev"
         }
-    },
-
-	"minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
