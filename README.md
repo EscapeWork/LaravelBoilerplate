@@ -67,6 +67,11 @@ If you add more `.coffee` files, you will need to go to the `Gruntfile.js` and a
 
 ***
 
+### Things you may want to change
+
+* The default environment detection is mapped to `*.local`. You may want to change this in the `bootstrap/start.php` file.
+* This bootstrap uses [laravel-asset-versioning](https://github.com/EscapeWork/laravel-asset-versioning) version the assets in production. If you don't want to use this package, just remove in the `composer.json` file and the `app/config/app.php` providers array.
+
 ### Components
 
 * [Laravel 4](http://laravel.com/)

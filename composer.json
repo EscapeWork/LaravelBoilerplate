@@ -6,6 +6,8 @@
 
 	"require": {
 		"laravel/framework": "4.1.*",
+
+        "escapework/laravel-asset-versioning": "0.1.*",
         "escapework/laravelhelpers": "0.6.*"
 	},
 
@@ -44,11 +46,5 @@
 		"preferred-install": "dist"
 	},
 
-	"minimum-stability": "stable",
-
-    "extra": {
-        "branch-alias": {
-            "dev-master": "0.2.*-dev"
-        }
-    }
+	"minimum-stability": "stable"
 }
