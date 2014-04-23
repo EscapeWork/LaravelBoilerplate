@@ -19,7 +19,7 @@ This command will:
 
 ### Assets
 
-This bootstrap utilizes [SASS](http://sass-lang.com/), [Compass](http://compass-style.org/) and [CoffeeScript](http://coffeescript.org/). So you will need:
+This bootstrap utilizes [SASS](http://sass-lang.com/), [Compass](http://compass-style.org/) and [Grunt](http://gruntjs.com/). So you will need:
 
 * [NodeJS](http://nodejs.org/)
   * [Grunt](http://gruntjs.com/) `$ npm install -g grunt-cli`
@@ -54,17 +54,6 @@ public/stylesheets/scss
 
 All this files compile to the `public/stylesheets/css` folder.
 
-##### CoffeeScript
-
-public/javascripts/coffee
-```
-├── main.coffee
-```
-
-All this files compile to the `public/javascripts/js` folder.
-
-If you add more `.coffee` files, you will need to go to the `Gruntfile.js` and add this file.
-
 ***
 
 ### Things you may want to change
@@ -77,7 +66,6 @@ If you add more `.coffee` files, you will need to go to the `Gruntfile.js` and a
 * [Laravel 4](http://laravel.com/)
 * [LaravelHelpers](https://github.com/EscapeWork/LaravelHelpers)
 * [SASS](http://sass-lang.com/) with [Compass](http://compass-style.org/);
-* [Coffeescript](http://coffeescript.org/);
 * [Normalize CSS](http://necolas.github.io/normalize.css/);
 * [jQuery](http://jquery.com/);
 * [Modernizr](http://modernizr.com/);
