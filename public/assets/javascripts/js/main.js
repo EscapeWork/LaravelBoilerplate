@@ -1,4 +1,9 @@
-(function() {
-  console.log('write me!');
+// ======================================================
+// Your JS main file
+// Author: Your name <your@email>
+// ======================================================
 
-}).call(this);
+(function() {
+    alert('ok');
+
+})();

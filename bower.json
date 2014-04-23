@@ -1,0 +1,7 @@
+{
+    "name": "escape-laravel-bootstrap",
+
+    "dependencies": {
+        "jquery": "1.11.*"
+    }
+}

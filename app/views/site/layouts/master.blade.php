@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" href="{{ Asset::v('assets/stylesheets/css/main.css') }}" />
     @show
 
-    <script type="text/javascript" src="{{ asset('assets/javascripts/js/vendor/modernizr.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/javascripts/min/vendor/modernizr.js') }}"></script>
 </head>
 <body>
     <header class="header">
@@ -28,7 +28,7 @@
     </footer><!-- .footer -->
 
     @section('scripts')
-        <script type="text/javascript" src="{{ asset('assets/javascripts/js/vendor/jquery.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/javascripts/min/vendor.min.js') }}"></script>
         <script type="text/javascript" src="{{ Asset::v('assets/javascripts/js/main.min.js') }}"></script>
     @show
 </body>
