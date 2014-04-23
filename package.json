@@ -3,6 +3,7 @@
         "grunt-contrib-compass" : "*",
         "grunt-contrib-uglify" : "*",
         "grunt-contrib-watch" : "*",
+        "grunt-contrib-jshint" : "*",
         "grunt-notify": "*",
         "grunt" : "~0.4.4"
     }

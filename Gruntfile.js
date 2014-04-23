@@ -2,6 +2,13 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
+        jshint: {
+            all: [
+                'Gruntfile.js',
+                'public/assets/javascripts/js/**/*.js'
+            ]
+        },
+
         uglify: {
             vendors: {
                 files: {
@@ -27,7 +34,7 @@ module.exports = function(grunt) {
         watch: {
             js: {
                 files: ['public/assets/javascripts/js/**/*.js'],
-                tasks: ['uglify:app']
+                tasks: ['jshint', 'uglify:app']
             },
 
             sass: {
@@ -37,10 +44,11 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-compass');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-notify');
 
-    grunt.registerTask('default', ['uglify', 'compass', 'watch']);
-}
+    grunt.registerTask('default', ['jshint', 'uglify', 'compass', 'watch']);
+};
