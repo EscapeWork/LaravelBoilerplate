@@ -60,6 +60,15 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
         $this->remember_token = $value;
     }
 
+    /**
+     * Get the column name for the "remember me" token.
+     *
+     * @return string
+     */
+    public function getRememberTokenName()
+    {
+        return 'remember_token';
+    }
 
 	/**
 	 * Get the e-mail address where password reminders are sent.
