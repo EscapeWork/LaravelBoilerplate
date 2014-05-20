@@ -50,6 +50,13 @@ Log::useDailyFiles(storage_path().'/logs/'.$logFile);
 
 App::error(function(Exception $exception, $code)
 {
+    # don't log 404s
+    if (
+        $exception instanceof Symfony\Component\HttpKernel\Exception\NotFoundHttpException ||
+        $exception instanceof Illuminate\Database\Eloquent\ModelNotFoundException) {
+        return;
+    }
+
 	Log::error($exception);
 });
 
