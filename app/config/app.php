@@ -120,6 +120,8 @@ return array(
         'Illuminate\View\ViewServiceProvider',
         'Illuminate\Workbench\WorkbenchServiceProvider',
 
+        # MyApp
+        'MyApp\Providers\ErrorsServiceProvider',
         'EscapeWork\Assets\AssetsServiceProvider',
 
 	),

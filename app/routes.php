@@ -10,12 +10,4 @@
 |
 */
 
-Route::get('/', array('as' => 'home', function()
-{
-    return View::make('site.home');
-}));
-
-App::error(function(Symfony\Component\HttpKernel\Exception\NotFoundHttpException $exception)
-{
-    return View::make('site.errors.404');
-});
+Route::get('/', array('as' => 'home', 'uses' => 'MyApp\Controllers\Site\HomeController@index'));

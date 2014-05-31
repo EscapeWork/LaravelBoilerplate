@@ -54,6 +54,14 @@ public/stylesheets/scss
 
 All this files compile to the `public/stylesheets/css` folder.
 
+### After Install
+
+When you finish installing the `laravel-bootstrap`, you may want to change the base namespace, which are `MyApp`. For that, you will need to change:
+
+* The folder name in `app/src/MyApp`;
+* The `namespace` declaration in every file inside the `app/src/MyApp` folder;
+* The `autoload` declaration in the `composer.json` file;
+
 ***
 
 ### Things you may want to change

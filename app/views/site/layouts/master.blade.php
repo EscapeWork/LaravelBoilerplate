@@ -19,9 +19,9 @@
 
     </header><!-- .header -->
 
-    <section class="content">
+    <main class="content">
         @yield('content')
-    </section><!-- .content -->
+    </main><!-- .content -->
 
     <footer class="footer">
 

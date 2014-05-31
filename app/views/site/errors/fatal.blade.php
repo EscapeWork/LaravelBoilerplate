@@ -2,6 +2,6 @@
 
 @section('content')
     <section class="container">
-        <h1>Not Found</h1>
+        <h1>Fatal Error</h1>
     </section>
 @stop

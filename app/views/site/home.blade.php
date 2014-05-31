@@ -1,7 +1,11 @@
 @extends('site.layouts.master')
 
 @section('content')
-    <h1>Hello from Escape Criativação</h1>
+    <section class="container">
+        <div class="align-center">
+            <h1>Hello from Agência Escape</h1>
 
-    <img width="500" src="https://s3.amazonaws.com/escape-criativacao/labs/logo-escape-svg/escape-criativacao.svg" alt="" />
+            <img width="500" src="https://s3.amazonaws.com/escape-criativacao/imagens/logotipos/escape-logotipo-azul.png" alt="Agência Escape">
+        </div>
+    </section>
 @stop
