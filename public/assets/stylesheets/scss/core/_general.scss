@@ -9,4 +9,6 @@ body {
 .container {
     width: $site-width;
     margin: 0 auto;
+
+    @include clearfix();
 }

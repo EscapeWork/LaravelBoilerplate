@@ -16,7 +16,9 @@
 </head>
 <body>
     <header class="header">
+        <div class="container">
 
+        </div>
     </header><!-- .header -->
 
     <main class="content">
@@ -24,7 +26,9 @@
     </main><!-- .content -->
 
     <footer class="footer">
+        <div class="container">
 
+        </div>
     </footer><!-- .footer -->
 
     @section('scripts')
