@@ -49,10 +49,11 @@ return array(
 		),
 
 		'iron' => array(
-			'driver'  => 'iron',
-			'project' => 'your-project-id',
-			'token'   => 'your-token',
-			'queue'   => 'your-queue-name',
+            'driver'  => 'iron',
+            'project' => 'your-project-id',
+            'token'   => 'your-token',
+            'queue'   => 'your-queue-name',
+            'encrypt' => true,
 		),
 
 	),
