@@ -1,7 +1,9 @@
 @extends('emails.layouts.master')
 
+{{-- This is an example email --}}
+
 @section('content')
-    <h3 style="font-size: 15px; line-height: 18px; margin-bottom: 10px;">Contato realizado pelo site da Escape</h3>
+    <h3 style="font-size: 15px; line-height: 18px; margin-bottom: 10px;">Contact</h3>
     <p style="font-size: 13px; line-height: 18px; margin-bottom: 30px;">Contato efetuado no dia {{ date('d/m/Y') }} as {{ date('H:i:s') }}.</p>
 
     <p style="font-size: 13px; line-height: 22px; margin-bottom: 0px;">
