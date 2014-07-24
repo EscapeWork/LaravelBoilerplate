@@ -33,6 +33,12 @@ To compile and watch for changes in your assets, run:
 $ grunt
 ```
 
+If you get an error message like `Error: invalid option: --sourcemap`, please remove your existing compass version and install with the option `--pre`.
+
+```
+$ [sudo] gem install compass --pre
+```
+
 #### Assets structure
 
 ##### SCSS
@@ -51,6 +57,8 @@ public/stylesheets/scss
 │   ├── _variables.scss
 │   └── _functions.scss
 ```
+
+The main.css file includes [sourcemaps](https://developer.chrome.com/devtools/docs/css-preprocessors), which makes easier to identify CSS rules in the developer tools.
 
 All this files compile to the `public/stylesheets/css` folder.
 
