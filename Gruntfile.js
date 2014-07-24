@@ -32,6 +32,23 @@ module.exports = function(grunt) {
             }
         },
 
+        scsslint: {
+            all: [
+                'public/assets/stylesheets/scss/components/*.scss',
+                'public/assets/stylesheets/scss/core/*.scss',
+                'public/assets/stylesheets/scss/global/*.scss',
+                'public/assets/stylesheets/scss/sections/**/*.scss',
+                'public/assets/stylesheets/scss/main.scss'
+            ],
+
+            options: {
+                bundleExec: false,
+                config: '.scss-lint.yml',
+                reporterOutput: 'scss-lint-report.xml',
+                colorizeOutput: true
+            },
+        },
+
         watch: {
             js: {
                 files: ['public/assets/javascripts/js/**/*.js'],
@@ -40,16 +57,17 @@ module.exports = function(grunt) {
 
             sass: {
                 files: ['public/assets/stylesheets/scss/**/*.scss'],
-                tasks: ['compass']
+                tasks: ['scsslint', 'compass']
             }
         }
     });
 
+    grunt.loadNpmTasks('grunt-contrib-compass');
+    grunt.loadNpmTasks('grunt-scss-lint');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-notify');
 
-    grunt.registerTask('default', ['jshint', 'uglify', 'compass', 'watch']);
+    grunt.registerTask('default', ['jshint', 'uglify', 'scsslint', 'compass', 'watch']);
 };

@@ -1,10 +1,11 @@
 {
     "devDependencies" : {
         "grunt-contrib-compass" : "*",
+        "grunt-scss-lint" : "*",
         "grunt-contrib-uglify" : "*",
         "grunt-contrib-watch" : "*",
         "grunt-contrib-jshint" : "*",
         "grunt-notify": "*",
-        "grunt" : "~0.4.4"
+        "grunt" : "~0.4.*"
     }
 }

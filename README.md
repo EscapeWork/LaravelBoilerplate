@@ -22,10 +22,11 @@ This command will:
 This bootstrap utilizes [SASS](http://sass-lang.com/), [Compass](http://compass-style.org/) and [Grunt](http://gruntjs.com/). So you will need:
 
 * [NodeJS](http://nodejs.org/)
-  * [Grunt](http://gruntjs.com/) `$ npm install -g grunt-cli`
+  * [Grunt](http://gruntjs.com/) `$ [sudo] npm install -g grunt-cli`
 * [Ruby](https://www.ruby-lang.org/)
-  * [SASS](http://sass-lang.com/) `$ gem install sass`
-  * [Compass](http://compass-style.org/) `$ gem install compass`
+  * [SASS](http://sass-lang.com/) `$ [sudo] gem install sass`
+  * [Compass](http://compass-style.org/) `$ [sudo] gem install compass --pre`
+  * SCSS Lint ` $ [sudo] gem install scss-lint`
 
 To compile and watch for changes in your assets, run:
 
@@ -47,7 +48,6 @@ public/stylesheets/scss
 ```
 ├── main.scss (import all the files in the tree)
 ├── components
-│   ├── _normalize.scss
 │   └── _helpers.scss
 ├── core
 │   ├── _general.scss
@@ -56,6 +56,8 @@ public/stylesheets/scss
 ├── global
 │   ├── _variables.scss
 │   └── _functions.scss
+├── vendor
+│   ├── _normalize.scss
 ```
 
 The main.css file includes [sourcemaps](https://developer.chrome.com/devtools/docs/css-preprocessors), which makes easier to identify CSS rules in the developer tools.
