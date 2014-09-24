@@ -8,4 +8,4 @@ thumbs.db
 public/files
 public/assets/stylesheets/dist
 public/assets/javascripts/dist
-scss-lint-report.xml
+.env
