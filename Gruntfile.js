@@ -42,6 +42,28 @@ module.exports = function(grunt) {
                 files: ['public/assets/stylesheets/scss/**/*.scss'],
                 tasks: ['compass']
             }
+        },
+
+        fontgen: {
+            options: {
+                // Task-specific options go here.
+            },
+
+            all: {
+                options: {
+                    path_prefix: 'fonts/',
+                    stylesheet: 'public/assets/stylesheets/scss/components/_font-face.scss',
+                },
+
+                files: [{
+                    src: [
+                        'public/assets/stylesheets/css/fonts/*.otf',
+                        'public/assets/stylesheets/css/fonts/*.ttf'
+                    ],
+
+                    dest: 'public/assets/stylesheets/css/fonts'
+                }]
+            }
         }
     });
 
@@ -50,7 +72,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-fontgen');
     grunt.loadNpmTasks('grunt-notify');
 
+    // tasks
     grunt.registerTask('default', ['jshint', 'uglify', 'compass', 'watch']);
+    grunt.registerTask('generate-font-faces', ['fontgen']);
 };

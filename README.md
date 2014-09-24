@@ -79,6 +79,15 @@ When you finish installing the `laravel-bootstrap`, you may want to change the b
 * The default environment detection is mapped to `*.local`. You may want to change this in the `bootstrap/start.php` file.
 * This bootstrap uses [laravel-asset-versioning](https://github.com/EscapeWork/laravel-asset-versioning) version the assets in production. If you don't want to use this package, just remove in the `composer.json` file and the `app/config/app.php` providers array.
 
+### Font-face generation
+
+This repository has the grunt [fontgen](https://github.com/agentk/grunt-fontgen) package installed via npm. If you want to generate some font-faces with a easy way, please do the following:
+
+* Check if your system has the [package](https://github.com/agentk/grunt-fontgen) requeriments;
+* Put all your `.otf` and `.ttf` files in the `public/assets/stylesheets/css/fonts` directory;
+* Run `$ grunt generate-font-faces`;
+* All your font-faces files need to be in your `public/assets/stylesheets/css/fonts` (including CSS);
+
 ### Components
 
 * [Laravel 4](http://laravel.com/)
@@ -87,7 +96,9 @@ When you finish installing the `laravel-bootstrap`, you may want to change the b
 * [Normalize CSS](http://necolas.github.io/normalize.css/);
 * [jQuery](http://jquery.com/);
 * [Modernizr](http://modernizr.com/);
-* [HTML5 Boilerplate](http://html5boilerplate.com/).
+* [HTML5 Boilerplate](http://html5boilerplate.com/);
+* [Grunt Fontgen](https://github.com/agentk/grunt-fontgen);
+* [PHP Dontenv](https://github.com/vlucas/phpdotenv);
 
 ***
 
