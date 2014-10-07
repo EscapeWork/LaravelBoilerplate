@@ -26,7 +26,6 @@ This bootstrap utilizes [SASS](http://sass-lang.com/), [Compass](http://compass-
 * [Ruby](https://www.ruby-lang.org/)
   * [SASS](http://sass-lang.com/) `$ [sudo] gem install sass`
   * [Compass](http://compass-style.org/) `$ [sudo] gem install compass --pre`
-  * SCSS Lint ` $ [sudo] gem install scss-lint`
 
 To compile and watch for changes in your assets, run:
 
@@ -48,16 +47,20 @@ public/stylesheets/scss
 ```
 ├── main.scss (import all the files in the tree)
 ├── components
+│   ├── _buttons.scss
+│   ├── _font-face.scss
+│   ├── _forms.scss
 │   └── _helpers.scss
 ├── core
 │   ├── _general.scss
 │   ├── _header.scss
+│   ├── _content.scss
 │   └── _footer.scss
 ├── global
 │   ├── _variables.scss
 │   └── _functions.scss
 ├── vendor
-│   ├── _normalize.scss
+│   └── _normalize.scss
 ```
 
 The main.css file includes [sourcemaps](https://developer.chrome.com/devtools/docs/css-preprocessors), which makes easier to identify CSS rules in the developer tools.
@@ -85,6 +88,7 @@ This repository has the grunt [fontgen](https://github.com/agentk/grunt-fontgen)
 
 * Check if your system has the [package](https://github.com/agentk/grunt-fontgen) requeriments;
 * Put all your `.otf` and `.ttf` files in the `public/assets/stylesheets/css/fonts` directory;
+* Uncomment all `fontgen` comments in `Gruntfile.js`;
 * Run `$ grunt generate-font-faces`;
 * All your font-faces files need to be in your `public/assets/stylesheets/css/fonts` (including CSS);
 

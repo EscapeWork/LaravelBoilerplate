@@ -27,7 +27,7 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     config: 'config.rb',
-                    sourcemap: true
+                    sourcemap: false
                 }
             }
         },
@@ -68,14 +68,13 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-contrib-compass');
-    grunt.loadNpmTasks('grunt-scss-lint');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-fontgen');
+    // grunt.loadNpmTasks('grunt-fontgen');
     grunt.loadNpmTasks('grunt-notify');
 
     // tasks
     grunt.registerTask('default', ['jshint', 'uglify', 'compass', 'watch']);
-    grunt.registerTask('generate-font-faces', ['fontgen']);
+    // grunt.registerTask('generate-font-faces', ['fontgen']);
 };
