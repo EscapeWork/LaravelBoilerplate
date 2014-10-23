@@ -10,4 +10,10 @@
 |
 */
 
-Route::get('/', array('as' => 'home', 'uses' => 'MyApp\Controllers\Site\HomeController@index'));
+Route::get('/', ['as' => 'home', 'uses' => 'MyApp\Controllers\Site\HomeController@index']);
+
+# 404
+App::missing(function($exception)
+{
+    return App::make('MyApp\Controllers\Site\BaseController')->error404();
+});

@@ -5,7 +5,10 @@ This is a personal Laravel Bootstrap, by [Escape Criativação](http://www.escap
 ### Installation
 
 ```sh
-$ composer create-project escape/laravel-bootstrap your-project-name
+$ git clone git@github.com:escapecriativacao/laravel-bootstrap.git [your-project-name] && cd $_ && rm -rf .git
+$ composer install
+$ php artisan key:generate
+& npm install
 ```
 
 This command will:
