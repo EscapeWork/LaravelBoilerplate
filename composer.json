@@ -16,8 +16,8 @@
     },
 
 	"autoload": {
-        "psr-0": {
-            "MyApp": "app/src"
+        "psr-4": {
+            "MyApp\\": "app/src"
         },
 
 		"classmap": [
