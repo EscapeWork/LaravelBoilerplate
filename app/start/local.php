@@ -1,4 +1,6 @@
 <?php
 
 # PHP Dotenv
-Dotenv::load(base_path());
+if (File::exists(base_path() . '.env')) {
+    Dotenv::load(base_path());
+}
