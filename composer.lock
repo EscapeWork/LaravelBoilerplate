@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "383210980ce69809ccd27cb145779655",
+    "hash": "7af4d06a30c8db1e8b7cfefed74141cc",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -138,32 +138,31 @@
         },
         {
             "name": "escapework/laravelhelpers",
-            "version": "0.6.11",
+            "version": "0.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/EscapeWork/LaravelHelpers.git",
-                "reference": "5e4b9e6f04e774f3169883195a18ad6cfd84a6ac"
+                "reference": "b2eeb08b08166b8ae9e524b54fd96ca4cafef85a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/EscapeWork/LaravelHelpers/zipball/5e4b9e6f04e774f3169883195a18ad6cfd84a6ac",
-                "reference": "5e4b9e6f04e774f3169883195a18ad6cfd84a6ac",
+                "url": "https://api.github.com/repos/EscapeWork/LaravelHelpers/zipball/b2eeb08b08166b8ae9e524b54fd96ca4cafef85a",
+                "reference": "b2eeb08b08166b8ae9e524b54fd96ca4cafef85a",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">=5.4.0"
             },
             "require-dev": {
                 "illuminate/database": ">=4.1.0",
                 "illuminate/support": ">=4.1.0",
                 "illuminate/validation": ">=4.1.0",
-                "mockery/mockery": "dev-master",
-                "phpunit/phpunit": "3.7.*"
+                "phpspec/phpspec": "~2.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.6.*-dev"
+                    "dev-master": "0.7.*-dev"
                 }
             },
             "autoload": {
@@ -186,13 +185,13 @@
                     "role": "Web Developer"
                 },
                 {
-                    "name": "Eduardo Kasper",
+                    "name": "Eduardo Henrique Kasper",
                     "email": "ehkasper@gmail.com",
                     "role": "Web Developer"
                 }
             ],
             "description": "Some Laravel 4 helpers to enjoy even more development",
-            "time": "2014-06-20 19:25:16"
+            "time": "2014-11-06 13:15:38"
         },
         {
             "name": "filp/whoops",
@@ -619,16 +618,16 @@
         },
         {
             "name": "patchwork/utf8",
-            "version": "v1.1.25",
+            "version": "v1.1.26",
             "source": {
                 "type": "git",
-                "url": "https://github.com/nicolas-grekas/Patchwork-UTF8.git",
-                "reference": "2d43bd047b120279511d45e76e61c5a9812d9a83"
+                "url": "https://github.com/tchwork/utf8.git",
+                "reference": "6b8e46603b49ee87ad6bceb314da94cc04ffcdce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nicolas-grekas/Patchwork-UTF8/zipball/2d43bd047b120279511d45e76e61c5a9812d9a83",
-                "reference": "2d43bd047b120279511d45e76e61c5a9812d9a83",
+                "url": "https://api.github.com/repos/tchwork/utf8/zipball/6b8e46603b49ee87ad6bceb314da94cc04ffcdce",
+                "reference": "6b8e46603b49ee87ad6bceb314da94cc04ffcdce",
                 "shasum": ""
             },
             "require": {
@@ -659,32 +658,32 @@
             "authors": [
                 {
                     "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com",
-                    "role": "Developer"
+                    "email": "p@tchwork.com"
                 }
             ],
-            "description": "Extensive, portable and performant handling of UTF-8 and grapheme clusters for PHP",
-            "homepage": "https://github.com/nicolas-grekas/Patchwork-UTF8",
+            "description": "Portable and performant UTF-8, Unicode and Grapheme Clusters for PHP",
+            "homepage": "https://github.com/tchwork/utf8",
             "keywords": [
+                "grapheme",
                 "i18n",
                 "unicode",
                 "utf-8",
                 "utf8"
             ],
-            "time": "2014-08-05 08:00:32"
+            "time": "2014-11-08 10:13:25"
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "0.3.8",
+            "version": "0.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "5085202f1f37769aae59f9711c423f28159c9b29"
+                "reference": "c6e88ca6e81bc5a2d7161658e16a95b7ef8d6ad1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/5085202f1f37769aae59f9711c423f28159c9b29",
-                "reference": "5085202f1f37769aae59f9711c423f28159c9b29",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/c6e88ca6e81bc5a2d7161658e16a95b7ef8d6ad1",
+                "reference": "c6e88ca6e81bc5a2d7161658e16a95b7ef8d6ad1",
                 "shasum": ""
             },
             "require": {
@@ -769,7 +768,7 @@
                 "x.509",
                 "x509"
             ],
-            "time": "2014-09-13 02:42:45"
+            "time": "2014-11-10 03:08:59"
         },
         {
             "name": "predis/predis",
