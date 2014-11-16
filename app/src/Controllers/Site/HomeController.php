@@ -7,8 +7,6 @@ class HomeController extends BaseController
 
     public function index()
     {
-        $view = View::make('site.home');
-
-        return $view;
+        return View::make('site.home');
     }
 }

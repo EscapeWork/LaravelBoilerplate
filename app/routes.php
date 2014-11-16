@@ -15,5 +15,5 @@ Route::get('/', ['as' => 'home', 'uses' => 'MyApp\Controllers\Site\HomeControlle
 # 404
 App::missing(function($exception)
 {
-    return App::make('MyApp\Controllers\Site\BaseController')->error404();
+    return App::make('MyApp\Controllers\Site\ErrorsController')->error404();
 });
