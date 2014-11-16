@@ -7,9 +7,9 @@ body {
 }
 
 .container {
-    margin: 0 auto;
     position: relative;
+    margin: 0 auto;
     width: $site-width;
 
-    // @include clearfix();
+    @include clearfix();
 }
