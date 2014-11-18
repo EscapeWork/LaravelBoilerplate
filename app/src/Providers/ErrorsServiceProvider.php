@@ -1,4 +1,4 @@
-<?php namespace MyApp\Providers;
+<?php namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
@@ -14,13 +14,13 @@ class ErrorsServiceProvider extends ServiceProvider
         $this->app->error(function(Exception $exception) use($app)
         {
             if (! $app['config']['app.debug']) {
-                return $app->make('MyApp\Controllers\Site\ErrorsController')->errorFatal();
+                return $app->make('App\Controllers\Site\ErrorsController')->errorFatal();
             }
         });
 
         $this->app->error(function(NotFoundHttpException $exception) use($app)
         {
-            return $app->make('MyApp\Controllers\Site\ErrorsController')->error404();
+            return $app->make('App\Controllers\Site\ErrorsController')->error404();
         });
     }
 }

@@ -1,7 +1,7 @@
 <?php
 /*
 |--------------------------------------------------------------------------
-| Application Routes
+| escapecriativacao/laravel-bootstrap - Routes
 |--------------------------------------------------------------------------
 |
 | Here is where you can register all of the routes for an application.
@@ -10,10 +10,10 @@
 |
 */
 
-Route::get('/', ['as' => 'home', 'uses' => 'MyApp\Controllers\Site\HomeController@index']);
+Route::get('/', ['as' => 'home', 'uses' => 'App\Controllers\Site\HomeController@index']);
 
 # 404
 App::missing(function($exception)
 {
-    return App::make('MyApp\Controllers\Site\ErrorsController')->error404();
+    return App::make('App\Controllers\Site\ErrorsController')->error404();
 });

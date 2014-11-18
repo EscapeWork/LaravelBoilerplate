@@ -61,7 +61,9 @@ public/stylesheets/scss
 │   └── _footer.scss
 ├── global
 │   ├── _variables.scss
-│   └── _functions.scss
+│   └── _mixins.scss
+├── sections
+│   └── home.scss
 ├── vendor
 │   └── _normalize.scss
 ```
