@@ -74,11 +74,12 @@ All this files compile to the `public/stylesheets/css` folder.
 
 ### After Install
 
-When you finish installing the `laravel-bootstrap`, you may want to change the base namespace, which are `MyApp`. For that, you will need to change:
+We use `psr-4` for autoloading the app classes, and the default namespace is `App`. If you want to change that, you will need:
 
-* The folder name in `app/src/MyApp`;
-* The `namespace` declaration in every file inside the `app/src/MyApp` folder;
+* The `namespace` declaration in every file inside the `app/src` folder;
 * The `autoload` declaration in the `composer.json` file;
+* The `namespace` declaration in the `app/routes.php` file;
+* The `namespace` declaration in the `app/src/Providers/ErrorsServiceProvider.php` file;
 
 ***
 
