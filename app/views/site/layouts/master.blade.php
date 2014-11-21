@@ -9,6 +9,13 @@
         <title>Laravel Bootstrap</title>
         <meta name="description" content="">
         <link rel="canonical" href="{{ route('home') }}">
+
+        {{-- Open Graph --}}
+        <meta property="og:title" content="Laravel Bootstrap">
+        <meta property="og:description" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="{{ route('home') }}">
+        <meta property="og:image" content="{{ asset('assets/images/social/logo.png') }}">
     @show
 
     <!-- favicon -->
