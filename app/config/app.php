@@ -121,8 +121,10 @@ return array(
         'Illuminate\View\ViewServiceProvider',
         'Illuminate\Workbench\WorkbenchServiceProvider',
 
-        # App
+        # App service providers
         'App\Providers\ErrorsServiceProvider',
+
+        # Third party service providers (do not remove this line)
         'EscapeWork\Assets\AssetsServiceProvider',
 
 	),
