@@ -23,11 +23,13 @@ $app = new Illuminate\Foundation\Application;
 | given environment, then we will automatically detect it for you.
 |
 */
+
 $env = $app->detectEnvironment(array(
 
-    'local' => array('*.local', '*-local'),
+    'local' => array('*.local', '*-local', 'homestead'),
 
 ));
+
 /*
 |--------------------------------------------------------------------------
 | Bind Paths
