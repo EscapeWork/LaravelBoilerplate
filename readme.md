@@ -28,18 +28,12 @@ This bootstrap utilizes [SASS](http://sass-lang.com/), [Compass](http://compass-
   * [Grunt](http://gruntjs.com/) `$ [sudo] npm install -g grunt-cli`
 * [Ruby](https://www.ruby-lang.org/)
   * [SASS](http://sass-lang.com/) `$ [sudo] gem install sass`
-  * [Compass](http://compass-style.org/) `$ [sudo] gem install compass --pre`
+  * [Compass](http://compass-style.org/) `$ [sudo] gem install compass`
 
 To compile and watch for changes in your assets, run:
 
 ```sh
 $ grunt
-```
-
-If you get an error message like `Error: invalid option: --sourcemap`, please remove your existing compass version and install with the option `--pre`.
-
-```
-$ [sudo] gem install compass --pre
 ```
 
 #### Assets structure
