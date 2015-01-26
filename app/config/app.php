@@ -126,6 +126,7 @@ return array(
 
         # Third party service providers (do not remove this line)
         'EscapeWork\Assets\AssetsServiceProvider',
+        'Laracasts\Commander\CommanderServiceProvider',
 
 	),
 
