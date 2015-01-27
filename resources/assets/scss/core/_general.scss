@@ -1,0 +1,15 @@
+// ========================================================================
+// SCSS > General Styles
+// ========================================================================
+
+body {
+    font-family: $font-default;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: $site-width;
+
+    @include clearfix();
+}
