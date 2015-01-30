@@ -9,3 +9,4 @@ public/files
 public/assets/stylesheets/dist
 public/assets/javascripts/dist
 .env
+/storage

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\ServiceProvider;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use App\Exceptions\ValidationException;
 use Exception;
 
 class ErrorsServiceProvider extends ServiceProvider
@@ -21,6 +22,11 @@ class ErrorsServiceProvider extends ServiceProvider
         $this->app->error(function(NotFoundHttpException $exception) use($app)
         {
             return $app->make('App\Controllers\Site\ErrorsController')->error404();
+        });
+
+        $this->app->error(function(ValidationException $e)
+        {
+            return Redirect::back()->withInput()->withErrors($e->getValidationErrors());
         });
     }
 }
