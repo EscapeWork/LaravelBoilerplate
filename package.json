@@ -6,6 +6,8 @@
     "grunt-contrib-jshint": "*",
     "grunt-notify": "*",
     "grunt": "~0.4.*",
-    "grunt-fontgen": "~0.2.2"
+    "grunt-fontgen": "~0.2.2",
+    "gulp": "^3.8.8",
+    "laravel-elixir": "*"
   }
 }

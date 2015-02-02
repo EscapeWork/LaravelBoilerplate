@@ -39,7 +39,7 @@ return [
 	|
 	*/
 
-	'timezone' => 'UTC',
+	'timezone' => 'America/Sao_Paulo',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -135,7 +135,6 @@ return [
 		'Illuminate\Translation\TranslationServiceProvider',
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
-
 		/*
 		 * Application Service Providers...
 		 */
