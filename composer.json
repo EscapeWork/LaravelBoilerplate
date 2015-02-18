@@ -1,16 +1,12 @@
 {
 	"name": "escape/laravel-bootstrap",
-	"description": "The Laravel Framework.",
-	"keywords": ["laravel", "bootstrap"],
-	"license": "MIT",
-	"type": "project",
+	"description": "The Agência Escape Laravel Framework bootstrap.",
 
 	"require": {
 		"laravel/framework": "~5.0"
 	},
 
 	"require-dev": {
-		"phpunit/phpunit": "~4.0",
 		"phpspec/phpspec": "~2.1"
 	},
 
@@ -48,5 +44,6 @@
 		"preferred-install": "dist"
 	},
 
-	"minimum-stability": "dev"
+	"minimum-stability": "dev",
+    "prefer-stable": true
 }
