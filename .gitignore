@@ -13,4 +13,4 @@ public/assets/javascripts/dist
 # bower components
 resources/assets/components/*
 !resources/assets/components/jquery/dist/jquery.js
-!resources/assets/components/normalize.scss/normalize.scss
+!resources/assets/components/normalize.scss/_normalize.scss
