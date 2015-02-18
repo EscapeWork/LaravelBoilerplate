@@ -12,13 +12,15 @@ module.exports = function(grunt) {
         uglify: {
             vendors: {
                 files: {
-                    'public/assets/javascripts/min/vendor.min.js': ['public/assets/components/jquery/dist/jquery.js']
+                    'public/assets/js/vendor/vendor.min.js': [
+                        'resources/assets/components/jquery/dist/jquery.js'
+                    ]
                 }
             },
 
             app: {
                 files: {
-                    'public/assets/javascripts/min/main.min.js': ['public/assets/javascripts/js/main.js']
+                    'public/assets/js/main.min.js': ['resources/assets/javascript/main.js']
                 }
             }
         },
@@ -33,10 +35,10 @@ module.exports = function(grunt) {
         },
 
         watch: {
-            // js: {
-            //     files: ['public/assets/javascripts/js/**/*.js'],
-            //     tasks: ['jshint', 'uglify:app']
-            // },
+            js: {
+                files: ['resources/assets/javascript/**/*.js'],
+                tasks: ['jshint', 'uglify:app']
+            },
 
             sass: {
                 files: ['resources/assets/scss/**/*.scss'],
@@ -45,10 +47,6 @@ module.exports = function(grunt) {
         },
 
         fontgen: {
-            options: {
-                // Task-specific options go here.
-            },
-
             all: {
                 options: {
                     path_prefix: 'fonts/',
@@ -75,6 +73,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-notify');
 
     // tasks
-    grunt.registerTask('default', ['compass', 'watch']);
+    grunt.registerTask('default', ['compass', 'uglify', 'watch']);
     // grunt.registerTask('generate-font-faces', ['fontgen']);
 };
