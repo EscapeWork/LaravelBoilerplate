@@ -145,9 +145,7 @@ return [
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
 
-        /*
-         * Third Party Service Providers...
-         */
+        # Third Party Service Providers...
 
 	],
 
