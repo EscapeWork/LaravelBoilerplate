@@ -6,11 +6,11 @@
 
 # Set this to the root of your project when deployed:
 http_path                  = ""
-css_dir                    = "public/assets/stylesheets/css"
-sass_dir                   = "public/assets/stylesheets/scss"
+css_dir                    = "public/assets/css"
+sass_dir                   = "resources/assets/scss"
 images_dir                 = "public/assets/images/"
 http_generated_images_path = "/assets/images/"
-javascripts_dir            = "public/assets/javascripts/js"
+javascripts_dir            = "public/assets/js"
 
 # You can select your preferred output style here (can be overridden via the command line):
 output_style = :compressed

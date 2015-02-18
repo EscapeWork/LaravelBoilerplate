@@ -12,13 +12,15 @@ module.exports = function(grunt) {
         uglify: {
             vendors: {
                 files: {
-                    'public/assets/javascripts/min/vendor.min.js': ['public/assets/components/jquery/dist/jquery.js']
+                    'public/assets/js/vendor/vendor.min.js': [
+                        'resources/assets/components/jquery/dist/jquery.js'
+                    ]
                 }
             },
 
             app: {
                 files: {
-                    'public/assets/javascripts/min/main.min.js': ['public/assets/javascripts/js/main.js']
+                    'public/assets/js/main.min.js': ['resources/assets/javascript/main.js']
                 }
             }
         },
@@ -34,34 +36,30 @@ module.exports = function(grunt) {
 
         watch: {
             js: {
-                files: ['public/assets/javascripts/js/**/*.js'],
+                files: ['resources/assets/javascript/**/*.js'],
                 tasks: ['jshint', 'uglify:app']
             },
 
             sass: {
-                files: ['public/assets/stylesheets/scss/**/*.scss'],
+                files: ['resources/assets/scss/**/*.scss'],
                 tasks: ['compass']
             }
         },
 
         fontgen: {
-            options: {
-                // Task-specific options go here.
-            },
-
             all: {
                 options: {
                     path_prefix: 'fonts/',
-                    stylesheet: 'public/assets/stylesheets/scss/components/_font-face.scss',
+                    stylesheet: 'resources/assets/scss/components/_font-face.scss',
                 },
 
                 files: [{
                     src: [
-                        'public/assets/stylesheets/css/fonts/*.otf',
-                        'public/assets/stylesheets/css/fonts/*.ttf'
+                        'public/assets/css/fonts/*.otf',
+                        'public/assets/css/fonts/*.ttf'
                     ],
 
-                    dest: 'public/assets/stylesheets/css/fonts'
+                    dest: 'public/assets/css/fonts'
                 }]
             }
         }
@@ -75,6 +73,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-notify');
 
     // tasks
-    grunt.registerTask('default', ['jshint', 'uglify', 'compass', 'watch']);
+    grunt.registerTask('default', ['compass', 'uglify', 'watch']);
     // grunt.registerTask('generate-font-faces', ['fontgen']);
 };

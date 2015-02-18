@@ -1,11 +1,11 @@
 {
-  "devDependencies": {
-    "grunt-contrib-compass": "*",
-    "grunt-contrib-uglify": "*",
-    "grunt-contrib-watch": "*",
-    "grunt-contrib-jshint": "*",
-    "grunt-notify": "*",
-    "grunt": "~0.4.*",
-    "grunt-fontgen": "~0.2.2"
-  }
+    "devDependencies": {
+        "grunt-contrib-compass": "*",
+        "grunt-contrib-uglify": "*",
+        "grunt-contrib-watch": "*",
+        "grunt-contrib-jshint": "*",
+        "grunt-notify": "*",
+        "grunt-fontgen": "~0.2.2",
+        "grunt": "~0.4.*"
+    }
 }

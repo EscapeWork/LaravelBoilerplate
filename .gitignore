@@ -9,4 +9,8 @@ public/files
 public/assets/stylesheets/dist
 public/assets/javascripts/dist
 .env
-/storage
+
+# bower components
+resources/assets/components/*
+!resources/assets/components/jquery/dist/jquery.js
+!resources/assets/components/normalize.scss/_normalize.scss
