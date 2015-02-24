@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -11,8 +10,7 @@
 |
 */
 
-Route::get('/', 'App\WelcomeController@index');
-
+Route::get('/', ['as' => 'home', 'uses' => 'App\WelcomeController@index']);
 Route::get('home', 'App\HomeController@index');
 
 Route::controllers([
