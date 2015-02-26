@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 
             app: {
                 files: {
-                    'public/assets/js/main.min.js': ['resources/assets/javascript/main.js']
+                    'public/assets/js/app/main.min.js': ['resources/assets/javascript/app/main.js']
                 }
             }
         },

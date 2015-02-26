@@ -146,6 +146,7 @@ return [
 
         # Third Party Service Providers...
         'Illuminate\Html\HtmlServiceProvider',
+        'EscapeWork\Assets\AssetsServiceProvider',
 
     ],
 

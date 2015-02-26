@@ -4,7 +4,9 @@
 
     "require": {
         "laravel/framework": "~5.0",
-        "illuminate/html": "~5.0"
+        "illuminate/html": "~5.0",
+        "escapework/laravel-steroids": "~0.1",
+        "escapework/laravel-asset-versioning": "~0.2"
     },
 
     "require-dev": {

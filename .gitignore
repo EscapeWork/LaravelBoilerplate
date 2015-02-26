@@ -6,8 +6,7 @@ bootstrap/compiled.php
 .sass-cache/
 thumbs.db
 public/files
-public/assets/stylesheets/dist
-public/assets/javascripts/dist
+public/assets/dist
 .env
 
 # bower components
