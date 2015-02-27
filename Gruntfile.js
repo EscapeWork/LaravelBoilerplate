@@ -12,9 +12,13 @@ module.exports = function(grunt) {
         uglify: {
             vendors: {
                 files: {
-                    'public/assets/js/vendor/vendor.min.js': [
+                    'public/assets/vendor/modernizr.min.js': [
+                        'resources/assets/components/modernizr/modernizr.js'
+                    ],
+
+                    'public/assets/vendor/vendor.min.js': [
                         'resources/assets/components/jquery/dist/jquery.js'
-                    ]
+                    ],
                 }
             },
 
