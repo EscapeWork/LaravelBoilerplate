@@ -1,0 +1,1 @@
+!function(){window.App=window.App||{},App.Messages={show:function(n){var o=[];$.each(n,function(n,p){o.push(p[0])}),alert(o.join("\n"))}}}();

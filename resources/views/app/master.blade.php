@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     @section('seo')
         <title>Laravel Bootstrap</title>
@@ -25,7 +26,7 @@
         <link rel="stylesheet" type="text/css" href="{{ Asset::v('assets/css/main.css') }}">
     @show
 
-    <script type="text/javascript" src="{{ asset('assets/vendor/modernizr.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/vendor/modernizr.js') }}"></script>
 </head>
 <body>
     <header class="header">
@@ -46,7 +47,7 @@
 
     @section('scripts')
         <script type="text/javascript" src="{{ asset('assets/vendor/vendor.min.js') }}"></script>
-        <script type="text/javascript" src="{{ Asset::v('assets/js/app/main.min.js') }}"></script>
+        <script type="text/javascript" src="{{ Asset::v('assets/js/app/main.js') }}"></script>
     @show
 </body>
 </html>
