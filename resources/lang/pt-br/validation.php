@@ -13,13 +13,13 @@ return [
     |
     */
 
-    "accepted"             => "O :attribute precisa ser aceito.",
-    "active_url"           => "O :attribute não é uma URL válida.",
-    "after"                => "O :attribute precisa ser uma data posterior a :date.",
+    "accepted"             => "The :attribute must be accepted.",
+    "active_url"           => "The :attribute is not a valid URL.",
+    "after"                => "The :attribute must be a date after :date.",
     "alpha"                => "The :attribute may only contain letters.",
     "alpha_dash"           => "The :attribute may only contain letters, numbers, and dashes.",
     "alpha_num"            => "The :attribute may only contain letters and numbers.",
-    "array"                => "O :attribute precisa ser um array.",
+    "array"                => "The :attribute must be an array.",
     "before"               => "The :attribute must be a date before :date.",
     "between"              => [
         "numeric" => "The :attribute must be between :min and :max.",
@@ -34,7 +34,7 @@ return [
     "different"            => "The :attribute and :other must be different.",
     "digits"               => "The :attribute must be :digits digits.",
     "digits_between"       => "The :attribute must be between :min and :max digits.",
-    "email"                => "O :attribute precisa ser um endereço de e-mail válido.",
+    "email"                => "The :attribute must be a valid email address.",
     "filled"               => "The :attribute field is required.",
     "exists"               => "The selected :attribute is invalid.",
     "image"                => "The :attribute must be an image.",
@@ -54,24 +54,24 @@ return [
         "string"  => "The :attribute must be at least :min characters.",
         "array"   => "The :attribute must have at least :min items.",
     ],
-    "not_in"               => "The selected :attribute is invalid.",
-    "numeric"              => "The :attribute must be a number.",
-    "regex"                => "The :attribute format is invalid.",
-    "required"             => "O :attribute é obrigatório.",
-    "required_if"          => "The :attribute field is required when :other is :value.",
-    "required_with"        => "The :attribute field is required when :values is present.",
-    "required_with_all"    => "The :attribute field is required when :values is present.",
-    "required_without"     => "The :attribute field is required when :values is not present.",
-    "required_without_all" => "The :attribute field is required when none of :values are present.",
-    "same"                 => "The :attribute and :other must match.",
+    "not_in"               => "O campo :attribute selecionado é inválido.",
+    "numeric"              => "O campo :attribute precisa ser um número.",
+    "regex"                => "O formato do campo :attribute é inválido.",
+    "required"             => "O campo :attribute é obrigatório.",
+    "required_if"          => "O campo :attribute é obrigatório quando o campo :other for :value.",
+    "required_with"        => "O campo :attribute é obrigatório quando o campo :values for preenchido.",
+    "required_with_all"    => "O campo :attribute é obrigatório quando os campos :values forem preenchidos.",
+    "required_without"     => "O campo :attribute é obrigatório quando o campo :values não for preenchido.",
+    "required_without_all" => "O campo :attribute é obrigatório quando nenhum dos campos :values forem preenchidos.",
+    "same"                 => "O campo :attribute e o campo :other precisam ser iguais.",
     "size"                 => [
-        "numeric" => "The :attribute must be :size.",
-        "file"    => "The :attribute must be :size kilobytes.",
-        "string"  => "The :attribute must be :size characters.",
-        "array"   => "The :attribute must contain :size items.",
+        "numeric" => "O campo :attribute precisa ter :size dígitos.",
+        "file"    => "O campo :attribute precisa ter :size kilobytes.",
+        "string"  => "O campo :attribute precisa ter :size caracteres.",
+        "array"   => "O campo :attribute precisa conter :size itens.",
     ],
-    "unique"               => "The :attribute has already been taken.",
-    "url"                  => "The :attribute format is invalid.",
+    "unique"               => "O campo :attribute já está sendo utilizado.",
+    "url"                  => "O campo :attribute precisa ser uma URL válida",
     "timezone"             => "The :attribute must be a valid zone.",
     "image_array"          => "Por favor, envie somente imagens",
 
@@ -103,6 +103,12 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'title'       => 'título',
+        'name'        => 'nome',
+        'description' => 'descrição',
+        'active'      => 'active',
+        'bio'         => 'resumo'
+    ],
 
 ];
