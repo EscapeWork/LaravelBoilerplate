@@ -1,3 +1,3 @@
 (function() {
-    console.log('write me now!');
+    window.App = window.App || {};
 })();
