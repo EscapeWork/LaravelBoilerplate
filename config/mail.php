@@ -55,6 +55,7 @@ return [
 	*/
 
 	'from' => ['address' => null, 'name' => null],
+    'to'   => env('MAIL_TO', 'luis@escape.ppg.br'),
 
 	/*
 	|--------------------------------------------------------------------------
