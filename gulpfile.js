@@ -3,7 +3,8 @@ var gulp    = require('gulp'),
     uglify  = require('gulp-uglify')
     compass = require('gulp-compass'),
     jshint  = require('gulp-jshint'),
-    rename  = require('gulp-rename');
+    rename  = require('gulp-rename'),
+    sequence = require('gulp-run-sequence');
 
 var paths = {
     css: 'public/assets/css',
