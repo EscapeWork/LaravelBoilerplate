@@ -1,9 +1,10 @@
-var gulp    = require('gulp'),
-    concat  = require('gulp-concat'),
-    uglify  = require('gulp-uglify')
-    compass = require('gulp-compass'),
-    jshint  = require('gulp-jshint'),
-    rename  = require('gulp-rename'),
+var gulp     = require('gulp'),
+    concat   = require('gulp-concat'),
+    uglify   = require('gulp-uglify')
+    compass  = require('gulp-compass'),
+    jshint   = require('gulp-jshint'),
+    rename   = require('gulp-rename'),
+    cssmin   = require('gulp-cssmin')
     sequence = require('run-sequence');
 
 var paths = {
@@ -48,6 +49,7 @@ gulp.task('jshint', function() {
 gulp.task('uglify', function() {
     return gulp.src('resources/assets/javascript/**/*.js')
                .pipe(uglify())
+               .pipe(rename({suffix: '.min'}))
                .pipe(gulp.dest(paths.js));
 });
 
