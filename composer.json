@@ -1,5 +1,5 @@
 {
-    "name": "escape/laravel-bootstrap",
+    "name": "escapework/laravel-boilerplate",
     "description": "The Agência Escape Laravel Framework bootstrap.",
 
     "require": {
