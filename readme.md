@@ -1,11 +1,11 @@
-# Laravel Bootstrap
+# Laravel Boilerplate
 
-This is a personal Laravel Bootstrap, by [Escape Criativação](http://www.escape.ppg.br).
+This is a personal Laravel Boilerplate, by [Agência Escape](http://www.escape.ppg.br).
 
 ### Installation
 
 ```sh
-$ git clone git@github.com:escapecriativacao/laravel-bootstrap.git [your-project-name] && cd $_ && rm -rf .git
+$ git clone git@github.com:EscapeWork/LaravelBoilerplate.git [your-project-name] && cd $_ && rm -rf .git
 $ composer install
 $ php artisan key:generate
 $ npm install
