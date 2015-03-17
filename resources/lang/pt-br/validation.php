@@ -74,6 +74,8 @@ return [
     "url"                  => "O campo :attribute precisa ser uma URL válida",
     "timezone"             => "The :attribute must be a valid zone.",
     "image_array"          => "Por favor, envie somente imagens",
+    'honeypot'             => 'Não foi possível enviar sua mensagem',
+    'honeytime'            => 'Não foi possível enviar sua mensagem',
 
     /*
     |--------------------------------------------------------------------------

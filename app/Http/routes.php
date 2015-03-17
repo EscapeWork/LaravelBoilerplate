@@ -10,3 +10,6 @@
 */
 
 Route::get('/', ['as' => 'home', 'uses' => 'App\HomeController@index']);
+
+# contato
+Route::post('contato', ['as' => 'contact.send', 'uses' => 'App\ContactController@send']);
