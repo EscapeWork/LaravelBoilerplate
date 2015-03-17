@@ -29,6 +29,10 @@ gulp.task('publish', function() {
         ])
         .pipe(concat('vendor.min.js'))
         .pipe(gulp.dest(paths.vendor));
+
+    gulp.src('resources/assets/components/jquery.inputmask/dist/jquery.inputmask.bundle.min.js')
+        .pipe(rename('jquery.inputmask.min.js'))
+        .pipe(gulp.dest(paths.vendor));
 });
 
 gulp.task('compass', function() {
