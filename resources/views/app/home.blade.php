@@ -10,7 +10,8 @@
         }
 
         .home-sample {
-            margin: 100px 0 0 0;
+            margin: 100px 0 70px 0;
+            text-align: center;
         }
 
         h1 {

@@ -32,7 +32,7 @@
     <header class="header">
         <div class="container">
 
-        </div>
+        </div><!-- .container -->
     </header><!-- .header -->
 
     <main class="content">
@@ -42,7 +42,7 @@
     <footer class="footer">
         <div class="container">
 
-        </div>
+        </div><!-- .container -->
     </footer><!-- .footer -->
 
     @section('scripts')
