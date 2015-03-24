@@ -110,7 +110,10 @@ return [
         'name'        => 'nome',
         'description' => 'descrição',
         'active'      => 'active',
-        'bio'         => 'resumo'
+        'bio'         => 'resumo',
+        'company'     => 'empresa',
+        'address'     => 'endereço',
+        'phone'       => 'telefone',
     ],
 
 ];
