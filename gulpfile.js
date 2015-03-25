@@ -38,9 +38,11 @@ gulp.task('publish', function() {
 gulp.task('compass', function() {
     gulp.src('resources/assets/scss/**/*.scss')
         .pipe(compass({
+            style: 'compressed',
             css: paths.css,
             sass: paths.scss,
-            image: paths.images
+            image: paths.images,
+            http_generated_images_path: '/assets/images'
         }));
 });
 
