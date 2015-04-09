@@ -1,5 +1,4 @@
 (function() {
-    (function() {
     window.App = window.App || {};
 
     // Contact
@@ -61,6 +60,4 @@
 
     // inits
     App.Contact.init();
-})();
-
 })();
