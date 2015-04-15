@@ -21,14 +21,16 @@ module.exports = function(grunt) {
             }
         },
 
+        concat: {
+            vendors: {   // vendor.min.js
+                src: ['resources/assets/components/jquery/dist/jquery.min.js'],
+                dest: 'public/assets/vendor/vendor.min.js'
+            }
+        },
+
         copy: {
             vendor: {
                 files: [
-                    {   // vendor.min.js
-                        src: ['resources/assets/components/jquery/dist/jquery.min.js'],
-                        dest: 'public/assets/vendor/vendor.min.js'
-                    },
-
                     {   // jquery inputmask
                         src: ['resources/assets/components/jquery.inputmask/dist/jquery.inputmask.bundle.min.js'],
                         dest: 'public/assets/vendor/jquery.inputmask.min.js'
@@ -62,8 +64,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-notify');
 
-    grunt.registerTask('default', ['copy', 'jshint', 'uglify', 'compass', 'watch']);
+    grunt.registerTask('default', ['copy', 'concat', 'jshint', 'uglify', 'compass', 'watch']);
 };
