@@ -2,6 +2,21 @@
 // SCSS > Content
 // ========================================================================
 
-.content {
+.content {}
 
-}
+    .content-title {
+
+    }
+
+    .content-text {
+        font-size: 14px;
+        line-height: 1.4em;
+
+        p {
+            margin: 0 0 25px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
