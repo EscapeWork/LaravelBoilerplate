@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7c95e069d6ba3a820f45216aae93fdcf",
+    "hash": "6c98c2b12fe8f8ab5338a0b95205dd17",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -224,16 +224,16 @@
         },
         {
             "name": "escapework/laravel-asset-versioning",
-            "version": "0.2.0",
+            "version": "0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/EscapeWork/laravel-asset-versioning.git",
-                "reference": "1aa904f057552bc6fe9e5791977bafbe247ea317"
+                "reference": "9f7e45a8e538029d7a16818473f8745afdd4f5ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/EscapeWork/laravel-asset-versioning/zipball/1aa904f057552bc6fe9e5791977bafbe247ea317",
-                "reference": "1aa904f057552bc6fe9e5791977bafbe247ea317",
+                "url": "https://api.github.com/repos/EscapeWork/laravel-asset-versioning/zipball/9f7e45a8e538029d7a16818473f8745afdd4f5ca",
+                "reference": "9f7e45a8e538029d7a16818473f8745afdd4f5ca",
                 "shasum": ""
             },
             "require": {
@@ -269,7 +269,7 @@
                 }
             ],
             "description": "Package to help you avoid cache by versioning your assets",
-            "time": "2015-03-23 22:04:18"
+            "time": "2015-04-29 20:15:35"
         },
         {
             "name": "escapework/laravel-steroids",
@@ -842,7 +842,7 @@
         },
         {
             "name": "msurguy/honeypot",
-            "version": "dev-master",
+            "version": "0.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msurguy/Honeypot.git",
@@ -982,16 +982,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v1.2.2",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "08f97eb4efa029e2fafb6d8c98b71731bf0cf621"
+                "reference": "dff239267fd1befa1cd40430c9ed12591aa720ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/08f97eb4efa029e2fafb6d8c98b71731bf0cf621",
-                "reference": "08f97eb4efa029e2fafb6d8c98b71731bf0cf621",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/dff239267fd1befa1cd40430c9ed12591aa720ca",
+                "reference": "dff239267fd1befa1cd40430c9ed12591aa720ca",
                 "shasum": ""
             },
             "require": {
@@ -1001,7 +1001,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2-dev"
+                    "dev-master": "1.3-dev"
                 }
             },
             "autoload": {
@@ -1023,7 +1023,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2015-04-03 14:33:59"
+            "time": "2015-05-02 15:40:40"
         },
         {
             "name": "psr/log",
@@ -2514,9 +2514,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "msurguy/honeypot": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
