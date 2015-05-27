@@ -50,12 +50,19 @@ module.exports = function(grunt) {
         watch: {
             sass: {
                 files : ['resources/assets/scss/**/*.scss'],
-                tasks: ['compass']
+                tasks: ['compass'],
+                options: {port: 62076, livereload: true}
             },
 
             js: {
                 files: ['resources/assets/javascript/**/*.js'],
-                tasks: ['jshint', 'uglify:app']
+                tasks: ['jshint', 'uglify:app'],
+                options: {port: 62076, livereload: true}
+            },
+
+            views: {
+                files: ['resources/views/**'],
+                options: {port: 62076, livereload: true}
             }
         }
     });
