@@ -7,7 +7,7 @@
     <p style="font-size: 13px; line-height: 22px; margin-bottom: 0px;">
     <strong>Nome:</strong> {{ $name or '' }}<br />
     <strong>E-mail:</strong> {{ $email or '' }}<br />
-    <strong>Telefone:</strong> {{ $phone or '' }}<br />
+    <strong>Telefone:</strong> {{ $phone or '' }}</p>
 
     <p style="font-size: 13px; line-height: 18px; margin-bottom: 0px;"><strong>Mensagem:</strong> <br />
     {{ $msg or '' }}</p>
