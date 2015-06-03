@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'timezone' => 'America/Sao_Paulo',
+    'timezone' => 'UTC',
 
     /*
     |--------------------------------------------------------------------------
@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'locale' => 'pt-br',
+    'locale' => 'en',
 
     /*
     |--------------------------------------------------------------------------
@@ -78,7 +78,8 @@ return [
     |
     */
 
-    'key'    => env('APP_KEY', 'SomeRandomString'),
+    'key' => env('APP_KEY', 'SomeRandomString'),
+
     'cipher' => MCRYPT_RIJNDAEL_128,
 
     /*
@@ -90,7 +91,7 @@ return [
     | the box, Laravel uses the Monolog PHP logging library. This gives
     | you a variety of powerful log handlers / formatters to utilize.
     |
-    | Available Settings: "single", "daily", "syslog"
+    | Available Settings: "single", "daily", "syslog", "errorlog"
     |
     */
 
@@ -114,6 +115,7 @@ return [
          */
         'Illuminate\Foundation\Providers\ArtisanServiceProvider',
         'Illuminate\Auth\AuthServiceProvider',
+        'Illuminate\Broadcasting\BroadcastServiceProvider',
         'Illuminate\Bus\BusServiceProvider',
         'Illuminate\Cache\CacheServiceProvider',
         'Illuminate\Foundation\Providers\ConsoleSupportServiceProvider',
@@ -139,15 +141,12 @@ return [
          * Application Service Providers...
          */
         'App\Providers\AppServiceProvider',
-        'App\Providers\BusServiceProvider',
-        'App\Providers\ConfigServiceProvider',
         'App\Providers\EventServiceProvider',
         'App\Providers\RouteServiceProvider',
 
         # Third Party Service Providers...
-        'Illuminate\Html\HtmlServiceProvider',
         'EscapeWork\Assets\AssetsServiceProvider',
-        'Msurguy\Honeypot\HoneypotServiceProvider',
+        // 'Msurguy\Honeypot\HoneypotServiceProvider',
 
     ],
 
