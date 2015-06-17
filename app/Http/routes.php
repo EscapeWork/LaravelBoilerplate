@@ -17,7 +17,7 @@ Route::post('contato', ['as' => 'contact.send', 'uses' => 'App\ContactController
 
 
 # manager
-Route::group(['prefix' => config('manager.url'), 'middleware' => 'manager.authenticated'], function()
+Route::group(['prefix' => config('manager.url'), 'middleware' => 'manager.authenticated', 'as' => 'manager.'], function()
 {
     # if you do not use escapework/manager (private package) - just remove this group
 });
