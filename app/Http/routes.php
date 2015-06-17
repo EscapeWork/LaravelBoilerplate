@@ -20,7 +20,7 @@ Route::post('contato', ['as' => 'contact.send', 'uses' => 'App\ContactController
 Route::group([
     'prefix'     => config('manager.url'),
     'middleware' => 'manager.authenticated',
-    'as'         => 'manager.'
+    'as'         => 'manager.',
     'namespace'  => 'Manager'
 ], function()
 {
