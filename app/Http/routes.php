@@ -9,11 +9,14 @@
 | and give it the controller to call when that URI is requested.
 */
 
-Route::get('/', ['as' => 'home', 'uses' => 'App\HomeController@index']);
+Route::group(['namespace' => 'App'], function() {
+    # home
+    Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
 
-# contact
-Route::get('contato', ['as' => 'contact.index', 'uses' => 'App\ContactController@index']);
-Route::post('contato', ['as' => 'contact.send', 'uses' => 'App\ContactController@send']);
+    # contact
+    Route::get('contato', ['as' => 'contact.index', 'uses' => 'ContactController@index']);
+    Route::post('contato', ['as' => 'contact.send', 'uses' => 'ContactController@send']);
+});
 
 
 # manager
