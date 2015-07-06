@@ -13,7 +13,7 @@
 
         <form action="{{ route('contact.send') }}" method="post" class="contact-form js-contact-form">
             {!! Form::token() !!}
-            {!! Form::honeypot('honeyform', 'honeyform_time') !!}
+            {!! Honeypot::generate('honeyform', 'honeyform_time') !!}
 
             <fieldset class="contact-form-fieldset">
                 <div class="form-group">
