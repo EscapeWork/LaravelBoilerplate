@@ -146,7 +146,7 @@ return [
 
         # Third Party Service Providers...
         'EscapeWork\Assets\AssetsServiceProvider',
-        // 'Msurguy\Honeypot\HoneypotServiceProvider',
+        'Msurguy\Honeypot\HoneypotServiceProvider',
 
     ],
 
