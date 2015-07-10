@@ -5,14 +5,28 @@
     // this work with laravel form requests responses
     // usage: App.Messages.show(messages)
     App.Messages = {
-        show: function(messages) {
+        init: function() {
+            this.$modal = $('#modal-message');
+            this.$body  = this.$modal.find('.js-modal-body');
+        },
+
+        errors: function(messages) {
             var msg = [];
 
             $.each(messages, function(i, message) {
                 msg.push(message[0]);
             });
 
-            alert(msg.join("\n"));
+            this.show(msg.join("\n"));
+        },
+
+        message: function(message) {
+            this.show(message);
+        },
+
+        show: function(content) {
+            this.$body.html(content);
+            this.$modal.modal('show');
         }
     };
 
@@ -24,8 +38,6 @@
             this.$form   = $(form);
             this.$btn    = this.$form.find('.js-btn-submit');
             this.options = $.extend({conversionLabel: ''}, options);
-
-            this.$form.find('input[type="tel"]').inputmask('(99) 9999.99999');
         };
 
         this.bindUIEvents = function() {
@@ -51,8 +63,7 @@
                 }
             })
                 .success(function(data) {
-                    alert(data.message);
-
+                    App.Messages.message(data.message);
                     _this.clearForm();
 
                     // google analytics
@@ -65,7 +76,7 @@
                     );
                 })
                 .error(function(data) {
-                    App.Messages.show(data.responseJSON);
+                    App.Messages.errors(data.responseJSON);
                 })
                 .always(function() {
                     _this.$btn.prop('disabled', false);
@@ -172,4 +183,9 @@
         this.bindUIEvents();
         this.initInterval();
     };
+
+    // inits
+    App.Messages.init();
+
+    App.Messages.message('dasdasdasdas');
 })();

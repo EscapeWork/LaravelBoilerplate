@@ -23,7 +23,10 @@ module.exports = function(grunt) {
 
         concat: {
             vendors: {   // vendor.min.js
-                src: ['resources/assets/components/jquery/dist/jquery.min.js'],
+                src: [
+                    'resources/assets/components/jquery/dist/jquery.min.js',
+                    'resources/assets/components/bootstrap/modal.js'
+                ],
                 dest: 'public/assets/vendor/vendor.min.js'
             }
         },
