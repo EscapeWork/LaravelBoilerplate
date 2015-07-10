@@ -186,6 +186,4 @@
 
     // inits
     App.Messages.init();
-
-    App.Messages.message('dasdasdasdas');
 })();
