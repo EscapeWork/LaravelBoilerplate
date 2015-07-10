@@ -13,3 +13,41 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 </IfModule>
+
+# Expires Module
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access 5 days"
+    ExpiresByType image/jpg "access 1 year"
+    ExpiresByType image/jpeg "access 1 year"
+    ExpiresByType image/gif "access 1 year"
+    ExpiresByType image/png "access 1 year"
+    ExpiresByType text/css "access 1 month"
+    ExpiresByType text/javascript "access 1 month"
+    ExpiresByType application/pdf "access 1 month"
+    ExpiresByType text/x-javascript "access 1 month"
+    ExpiresByType application/x-shockwave-flash "access 1 month"
+    ExpiresByType image/x-icon "access 1 year"
+</IfModule>
+
+
+# Deflate
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/css application/json
+    AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript
+    AddOutputFilterByType DEFLATE text/xml application/xml text/x-component
+
+    # webfonts e SVG
+    <FilesMatch "\.(ttf|otf|eot|svg|woff)$" >
+        SetOutputFilter DEFLATE
+    </FilesMatch>
+</IfModule>
+
+
+# Headers
+<IfModule mod_headers.c>
+    Header unset ETag
+</IfModule>
+
+# Charset
+AddDefaultCharset UTF-8
