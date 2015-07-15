@@ -67,6 +67,27 @@ module.exports = function(grunt) {
                 files: ['resources/views/**'],
                 options: {port: 62076, livereload: true}
             }
+        },
+
+        fontgen: {
+            options: {
+                // Task-specific options go here.
+            },
+
+            all: {
+                options: {
+                    path_prefix: 'fonts/',
+                },
+
+                files: [{
+                    src: [
+                        'public/assets/css/fonts/*.otf',
+                        'public/assets/css/fonts/*.ttf'
+                    ],
+
+                    dest: 'public/assets/css/fonts'
+                }]
+            }
         }
     });
 
@@ -77,6 +98,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-notify');
+    grunt.loadNpmTasks('grunt-fontgen');
 
     grunt.registerTask('default', ['copy', 'concat', 'jshint', 'uglify', 'compass', 'watch']);
+    // grunt.registerTask('generate-font-faces', ['fontgen']);
 };
