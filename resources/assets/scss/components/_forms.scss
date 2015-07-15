@@ -1,51 +1,5 @@
 // ================================================================================================
-// Forms
+// Forms -
 // ================================================================================================
 
-fieldset {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-.input {
-    padding: .6em .8em;
-    border: 1px solid #ccc;
-    font-size: 13px;
-    @include border-radius(8px);
-
-    &:hover,
-    &:focus {
-        border-color: #333;
-    }
-}
-
-.form {
-    legend {
-        display: block;
-        margin: 0 0 15px;
-        font-size: 18px;
-        font-weight: bold;
-    }
-}
-
-.form-group {
-    margin: 0 0 4px;
-    @include clearfix();
-}
-
-    .form-group-label {
-        float: left;
-        width: 15%;
-        margin: 5px 2% 0 0;
-        text-align: right;
-    }
-
-    .form-group-input {
-        float: left;
-        width: 70%;
-    }
-
-    .form-actions {
-        padding: 0 0 0 17%;
-    }
+// write your fucking styles here

@@ -18,22 +18,22 @@
             <fieldset class="contact-form-fieldset">
                 <div class="form-group">
                     <label for="name" class="form-group-label">Nome</label>
-                    <input type="text" name="name" id="name" class="input" maxlength="255" required>
+                    <input type="text" name="name" id="name" class="form-control" maxlength="255" required>
                 </div><!-- .form-group -->
 
                 <div class="form-group">
                     <label for="email" class="form-group-label">E-mail</label>
-                    <input type="email" name="email" id="email" class="input" maxlength="255" required>
+                    <input type="email" name="email" id="email" class="form-control" maxlength="255" required>
                 </div><!-- .form-group -->
 
                 <div class="form-group">
                     <label for="phone" class="form-group-label">Telefone</label>
-                    <input type="tel" name="phone" id="phone" class="input" maxlength="255" required>
+                    <input type="tel" name="phone" id="phone" class="form-control" maxlength="255" required>
                 </div><!-- .form-group -->
 
                 <div class="form-group">
                     <label for="msg" class="form-group-label">Mensagem</label>
-                    <textarea name="msg" id="msg" class="input" rows="5" required></textarea>
+                    <textarea name="msg" id="msg" class="form-control" rows="5" required></textarea>
                 </div><!-- .form-group -->
             </fieldset><!-- .contact-form-fieldset -->
 

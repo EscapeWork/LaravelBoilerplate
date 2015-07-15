@@ -2,6 +2,14 @@
 // SCSS > General Styles
 // ========================================================================
 
+* {
+    @include box-sizing(border-box);
+}
+*:before,
+*:after {
+    @include box-sizing(border-box);
+}
+
 body {
     font-family: $font-default;
     color: $color-text;
