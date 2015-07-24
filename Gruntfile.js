@@ -120,5 +120,4 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-fontgen');
 
     grunt.registerTask('default', ['copy', 'concat', 'jshint', 'uglify', 'compass', 'watch']);
-    // grunt.registerTask('generate-font-faces', ['fontgen']);
 };
