@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    {{-- favicons --}}
+    @include('app.inc.favicons')
+
     @section('seo')
         <title>Laravel Bootstrap</title>
         <meta name="description" content="">
@@ -18,9 +21,6 @@
         <meta property="og:url" content="{{ route('home') }}">
         <meta property="og:image" content="{{ asset('assets/images/social/logo.png') }}">
     @show
-
-    <!-- favicon -->
-    <link rel="shotcurt icon" href="{{ asset('assets/images/favicon.ico') }}" text="image/x-icon">
 
     @section('styles')
         <link rel="stylesheet" type="text/css" href="{{ Asset::v('assets/css/main.css') }}">

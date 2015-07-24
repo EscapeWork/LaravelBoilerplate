@@ -7,6 +7,7 @@
     "grunt-contrib-jshint": "^0.11.1",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "*",
+    "grunt-favicons": "^0.7.0",
     "grunt-fontgen": "*",
     "grunt-notify": "~0.2.16"
   }

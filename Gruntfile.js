@@ -69,6 +69,24 @@ module.exports = function(grunt) {
             }
         },
 
+        favicons: {
+            options: {
+                trueColor: true,
+                precomposed: true,
+                appleTouchBackgroundColor: "#fff",
+                coast: true,
+                windowsTile: true,
+                tileBlackWhite: false,
+                tileColor: "auto",
+                html: 'resources/views/app/inc/favicons.blade.php',
+                HTMLPrefix: "/assets/images/icons/"
+            },
+            icons: {
+                src: 'public/assets/images/icons/favicon.png',
+                dest: 'public/assets/images/icons'
+            }
+        },
+
         fontgen: {
             options: {
                 // Task-specific options go here.
@@ -98,6 +116,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-notify');
+    grunt.loadNpmTasks('grunt-favicons');
     grunt.loadNpmTasks('grunt-fontgen');
 
     grunt.registerTask('default', ['copy', 'concat', 'jshint', 'uglify', 'compass', 'watch']);
