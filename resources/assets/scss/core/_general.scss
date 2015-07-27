@@ -18,7 +18,12 @@ body {
 .container {
     position: relative;
     margin: 0 auto;
-    width: $site-width;
+    width: $site-width-desktop;
 
     @include clearfix();
+
+    @media screen and (max-width: $site-width-mobile) {
+        padding: 0 15px;
+        width: auto;
+    }
 }
