@@ -14,7 +14,6 @@
     RewriteRule ^ index.php [L]
 
     # redirect non-www to www (descoment if you wish)
-    # RewriteEngine On
     # RewriteCond %{HTTP_HOST} !^www\.
     # RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
 </IfModule>

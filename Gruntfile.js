@@ -25,7 +25,7 @@ module.exports = function(grunt) {
             vendors: {   // vendor.min.js
                 src: [
                     'resources/assets/components/jquery/dist/jquery.min.js',
-                    'resources/assets/components/bootstrap/modal.js'
+                    'resources/assets/components/bootstrap-sass/assets/javascripts/bootstrap/modal.js'
                 ],
                 dest: 'public/assets/vendor/vendor.min.js'
             }

@@ -22,7 +22,7 @@ body {
 
     @include clearfix();
 
-    @media screen and (max-width: $site-width-mobile) {
+    @media screen and (max-width: $site-width-xs) {
         padding: 0 15px;
         width: auto;
     }
