@@ -18,7 +18,7 @@ body {
 .container {
     position: relative;
     margin: 0 auto;
-    width: $site-width-desktop;
+    width: $site-width-md;
 
     @include clearfix();
 
