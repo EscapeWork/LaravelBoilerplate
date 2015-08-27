@@ -1,4 +1,6 @@
-<?php namespace App\Http\Controllers\App;
+<?php
+
+namespace App\Http\Controllers\App;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

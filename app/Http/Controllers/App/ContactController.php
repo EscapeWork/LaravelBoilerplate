@@ -1,4 +1,6 @@
-<?php namespace App\Http\Controllers\App;
+<?php
+
+namespace App\Http\Controllers\App;
 
 use App\Http\Requests\ContactRequest;
 use App\Services\ContactService;
