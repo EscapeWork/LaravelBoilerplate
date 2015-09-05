@@ -17,7 +17,7 @@
                 msg.push(message[0]);
             });
 
-            this.show(msg.join("\n"));
+            this.show(msg.join('<br>'));
         },
 
         message: function(message) {
