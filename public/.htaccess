@@ -5,6 +5,10 @@
 
     RewriteEngine On
 
+    # redirect non-www to www (descoment if you wish)
+    # RewriteCond %{HTTP_HOST} !^www\.
+    # RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
     # Redirect Trailing Slashes...
     RewriteRule ^(.*)/$ /$1 [L,R=301]
 
@@ -12,10 +16,6 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
-
-    # redirect non-www to www (descoment if you wish)
-    # RewriteCond %{HTTP_HOST} !^www\.
-    # RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
 </IfModule>
 
 # expires module
