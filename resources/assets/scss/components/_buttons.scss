@@ -1,0 +1,25 @@
+// ================================================================================================
+// Buttons
+// ================================================================================================
+
+.btn {
+    display: inline-block;
+    padding: .7em 1em;
+    font-size: 14px;
+    @include linear-gradient(#e1e1e1, #ccc);
+    color: #333;
+    border: none;
+    text-decoration: none;
+    @include border-radius(8px);
+    @include transition(.2s linear);
+
+    &:hover {
+        @include linear-gradient(darken(#e1e1e1, 5%), darken(#ccc, 5%));
+        @include transition(.2s linear);
+    }
+
+    &[disabled] {
+        cursor: default;
+        @include opacity(.6);
+    }
+}

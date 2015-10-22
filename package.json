@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "grunt": "~0.4.*",
+    "grunt-contrib-compass": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-jshint": "^0.11.1",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-favicons": "^0.7.0",
+    "grunt-fontgen": "*",
+    "grunt-notify": "~0.2.16"
+  }
+}

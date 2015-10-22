@@ -1,0 +1,27 @@
+// ==================================================================
+// Functions/Mixins
+// ==================================================================
+
+@import "compass";
+
+@mixin linear-gradient($cor1, $cor2, $direction: top) {
+    background-color: $cor2;
+    @include background-image(linear-gradient($direction, $cor1, $cor2));
+}
+
+@mixin radial-gradient($pos, $color1, $color2) {
+    background: -webkit-radial-gradient($pos, ellipse farthest-side, $color1, $color2);
+    background: radial-gradient(farthest-side at $pos, $color1, $color2);
+}
+
+@mixin clearfix() {
+    &:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+@function rem($px, $base: 14px) {
+    @return ($px / $base) * 1rem;
+}
