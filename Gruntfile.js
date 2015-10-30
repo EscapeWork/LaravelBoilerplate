@@ -28,7 +28,6 @@ module.exports = function(grunt) {
                     ]
                 }
             }
-
         },
 
         copy: {
@@ -117,6 +116,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-notify');
     grunt.loadNpmTasks('grunt-favicons');
     grunt.loadNpmTasks('grunt-fontgen');
-
+	
     grunt.registerTask('default', ['copy', 'jshint', 'uglify', 'compass', 'watch']);
 };

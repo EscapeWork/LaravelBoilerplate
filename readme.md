@@ -17,7 +17,7 @@ Depois de confirmar que você tem todos estes itens instalados, execute no termi
 
 * Configure o domínio `seudominio.dev` para apontar para a pasta `public` deste projeto.
 
-Execute os seguintes comandos: 
+Execute os seguintes comandos:
 
 ```
 $ composer install
@@ -29,7 +29,7 @@ $ chmod -R 777 storage
 * Crie um arquivo chamado `.env`, e coloque o conteúdo do arquivo `.env.example` nele;
 * Altere as configurações do arquivo `.env` para as configurações que serão utilizadas no seu projeto;
 
-Execute os seguintes comandos: 
+Execute os seguintes comandos:
 
 ```
 $ php artisan manager:configure
@@ -65,7 +65,7 @@ $ git push deploy master
 
 #### Deploy script
 
-Depois de fazer o deploy, o seu servidor de produção deve estar configurado para executar os seguintes comandos: 
+Depois de fazer o deploy, o seu servidor de produção deve estar configurado para executar os seguintes comandos:
 
 ```
 $ composer install --no-dev
@@ -75,3 +75,49 @@ $ php artisan asset:dist
 $ php artisan route:cache
 $ php artisan config:cache
 ```
+=======
+# Laravel Boilerplate
+
+This is a personal Laravel Boilerplate, by [Agência Escape](http://www.escape.ppg.br).
+
+### Installation
+
+```sh
+$ git clone git@github.com:EscapeWork/LaravelBoilerplate.git [your-project-name] && cd $_ && rm -rf .git
+$ composer install
+$ php artisan key:generate
+$ npm install
+```
+
+This command will:
+
+* Clone this repository;
+* Install composer dependencies;
+* Install npm dependencies;
+* Generate Laravel key;
+
+***
+
+### License
+
+#### The MIT License (MIT)
+
+Copyright (c) 2013 Escape Criativação LTDA
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
