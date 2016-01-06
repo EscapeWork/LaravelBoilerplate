@@ -12,7 +12,7 @@
         <h1>Contato</h1>
 
         <form action="{{ route('contact.send') }}" method="post" class="contact-form js-contact-form">
-            {!! Form::token() !!}
+            {{ csrf_field() }}
             {!! Honeypot::generate('honeyform', 'honeyform_time') !!}
 
             <fieldset class="contact-form-fieldset">
