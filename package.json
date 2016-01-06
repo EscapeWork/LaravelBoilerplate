@@ -9,6 +9,7 @@
     "grunt-contrib-watch": "*",
     "grunt-favicons": "^0.7.0",
     "grunt-fontgen": "*",
+    "grunt-modernizr": "^1.0.1",
     "grunt-notify": "~0.2.16"
   }
 }

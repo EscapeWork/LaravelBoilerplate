@@ -105,6 +105,22 @@ module.exports = function(grunt) {
                     dest: 'public/assets/css/fonts'
                 }]
             }
+        },
+
+        modernizr: {
+            dist: {
+                "dest": "public/assets/vendor/modernizr.js",
+                "parseFiles": true,
+                "customTests": [],
+                // "devFile": "/PATH/TO/modernizr-dev.js",
+                // "outputFile": "/PATH/TO/modernizr-output.js",
+                "tests": [],
+                "extensibility": [
+                    "html5shiv",
+                    "setClasses"
+                ],
+                "uglify": true
+            }
         }
     });
 
@@ -116,6 +132,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-notify');
     grunt.loadNpmTasks('grunt-favicons');
     grunt.loadNpmTasks('grunt-fontgen');
-	
+    grunt.loadNpmTasks("grunt-modernizr");
+
     grunt.registerTask('default', ['copy', 'jshint', 'uglify', 'compass', 'watch']);
 };
