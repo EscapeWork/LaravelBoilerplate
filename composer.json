@@ -4,6 +4,7 @@
 
     "require": {
         "laravel/framework": "5.2.*",
+        "laravelcollective/html": "5.2.*",
         "escapework/laravel-steroids": "~0.2",
         "escapework/laravel-asset-versioning": "~0.3",
         "msurguy/honeypot": "1.0.*"

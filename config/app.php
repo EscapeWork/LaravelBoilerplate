@@ -156,6 +156,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         # Third Party Service Providers...
+        Collective\Html\HtmlServiceProvider::class,
         EscapeWork\Assets\AssetsServiceProvider::class,
         Msurguy\Honeypot\HoneypotServiceProvider::class,
 
@@ -204,6 +205,8 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+        'Form'      => Collective\Html\FormFacade::class,
+        'Html'      => Collective\Html\HtmlFacade::class,
 
     ],
 
