@@ -159,6 +159,7 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         EscapeWork\Assets\AssetsServiceProvider::class,
         Msurguy\Honeypot\HoneypotServiceProvider::class,
+        GeneaLabs\LaravelCaffeine\LaravelCaffeineServiceProvider::class,
 
     ],
 
