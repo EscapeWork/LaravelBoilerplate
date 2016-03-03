@@ -13,7 +13,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        # view composers
+        view()->composer('app.master', 'App\Composers\MasterComposer');
     }
 
     /**
