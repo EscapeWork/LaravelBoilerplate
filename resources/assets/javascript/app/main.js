@@ -67,13 +67,15 @@
                     _this.clearForm();
 
                     // google analytics
-                    ga(
-                        'send',
-                        'event',
-                        _this.options.conversionCategory,
-                        _this.options.conversionAction,
-                        _this.options.conversionLabel
-                    );
+                    if (typeof ga !== 'undefined') {
+                        ga(
+                            'send',
+                            'event',
+                            _this.options.conversionCategory,
+                            _this.options.conversionAction,
+                            _this.options.conversionLabel
+                        );
+                    }
                 })
                 .error(function(data) {
                     App.Messages.errors(data.responseJSON);
@@ -84,7 +86,7 @@
         };
 
         this.clearForm = function() {
-            this.$form.find('.input').val('');
+            this.$form.find('.form-control').val('');
         };
 
         // inits
