@@ -5,6 +5,7 @@
         "normalize.scss": "3.*",
         "jquery": "1.11.*",
         "jquery.inputmask": "3.*",
-        "bootstrap-sass": "~3.3.5"
+        "bootstrap-sass": "~3.3.5",
+        "font-awesome": "4.5.*"
     }
 }

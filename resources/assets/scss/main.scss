@@ -7,15 +7,14 @@
 
 // ========================================================================
 // Vendors
-// ========================================================================
 @import "../components/normalize.scss/normalize";
+@import "components/bootstrap";
+@import "vendor/font-awesome";
 
 
 // ========================================================================
 // Components
-// ========================================================================
 @import "components/font-face";
-@import "components/bootstrap";
 @import "components/helpers";
 @import "components/buttons";
 @import "components/forms";
@@ -23,7 +22,6 @@
 
 // ========================================================================
 // Core
-// ========================================================================
 @import "core/general";
 @import "core/content";
 @import "core/header";

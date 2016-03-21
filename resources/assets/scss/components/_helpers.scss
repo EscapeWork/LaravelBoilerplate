@@ -8,15 +8,16 @@
     margin: 0;
 }
 
-object[type="application/gas-events-cef"],
-iframe[name="google_conversion_frame"] {
-    display: none !important;
-    height: 0 !important;
-    width: 0 !important;
-    line-height: 0 !important;
-    font-size: 0 !important;
-    margin-top: -13px;
-    float: left;
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
 }
 
 .close {
@@ -45,4 +46,16 @@ button.close {
   cursor: pointer;
   background: transparent;
   border: 0;
+}
+
+
+object[type="application/gas-events-cef"],
+iframe[name="google_conversion_frame"] {
+    display: none !important;
+    height: 0 !important;
+    width: 0 !important;
+    line-height: 0 !important;
+    font-size: 0 !important;
+    margin-top: -13px;
+    float: left;
 }
