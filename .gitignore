@@ -8,8 +8,3 @@ thumbs.db
 public/files
 public/assets/dist
 .env
-
-# bower components
-resources/assets/components/*
-!resources/assets/components/jquery/dist/jquery.js
-!resources/assets/components/normalize.scss/_normalize.scss
