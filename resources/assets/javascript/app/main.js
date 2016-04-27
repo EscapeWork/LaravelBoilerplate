@@ -78,7 +78,9 @@
                     }
                 })
                 .error(function(data) {
-                    App.Messages.errors(data.responseJSON);
+                    if (data !== undefined) {
+                        App.Messages.errors(data.responseJSON);
+                    }
                 })
                 .always(function() {
                     _this.$btn.prop('disabled', false);
