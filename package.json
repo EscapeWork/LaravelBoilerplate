@@ -1,15 +1,15 @@
 {
   "devDependencies": {
-    "grunt": "~0.4.*",
-    "grunt-contrib-compass": "*",
-    "grunt-contrib-concat": "*",
-    "grunt-contrib-copy": "^0.8.0",
-    "grunt-contrib-jshint": "^0.11.1",
-    "grunt-contrib-uglify": "*",
-    "grunt-contrib-watch": "*",
-    "grunt-favicons": "^0.7.0",
-    "grunt-fontgen": "*",
-    "grunt-modernizr": "^1.0.1",
-    "grunt-notify": "~0.2.16"
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-favicons": "^2.2.6",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7",
+    "vinyl-source-stream": "^1.1.0"
   }
 }

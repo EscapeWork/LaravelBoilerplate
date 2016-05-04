@@ -55,7 +55,7 @@
     </div><!-- /.modal -->
 
     @section('scripts')
-        <script type="text/javascript" src="{{ asset('assets/js/vendor/vendor.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/vendor/vendor.min.js') }}"></script>
         <script type="text/javascript" src="{{ Asset::v('assets/js/app/main.min.js') }}"></script>
     @show
 </body>
