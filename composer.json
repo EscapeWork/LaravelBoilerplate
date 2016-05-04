@@ -44,8 +44,7 @@
         "post-update-cmd": [
             "php artisan clear-compiled",
             "php artisan optimize",
-            "php artisan vendor:publish --tag=public --force",
-            "php artisan migrate"
+            "php artisan vendor:publish --tag=public --force"
         ]
     },
 
