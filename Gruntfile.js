@@ -131,7 +131,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-notify');
     grunt.loadNpmTasks('grunt-favicons');
-    grunt.loadNpmTasks('grunt-fontgen');
     grunt.loadNpmTasks("grunt-modernizr");
 
     grunt.registerTask('default', ['copy', 'jshint', 'uglify', 'compass', 'watch']);
