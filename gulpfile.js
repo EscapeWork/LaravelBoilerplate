@@ -24,8 +24,12 @@ gulp.task('sass', function() {
     gulp.src(paths.scss + '/**/*.scss')
         .pipe(compass({
             config_file: 'config.rb',
+            style: 'compressed',
             css: paths.css,
-            sass: paths.scss
+            sass: paths.scss,
+            relative: false,
+            http_path: 'assets/images',
+            generated_images_path: 'public/assets/images/'
         }))
         .on('error', gutil.log)
         .pipe(gulp.dest(paths.css))
