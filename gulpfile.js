@@ -1,15 +1,16 @@
-var gulp       = require('gulp'),
-    notify     = require('gulp-notify'),
-    livereload = require('gulp-livereload')
-    gutil      = require('gulp-util'),
-    compass    = require('gulp-compass'),
-    uglify     = require('gulp-uglify'),
-    concat     = require('gulp-concat'),
-    rename     = require('gulp-rename'),
-    source     = require('vinyl-source-stream'),
-    browserify = require('gulp-browserify'),
-    favicons   = require('gulp-favicons'),
-    timer      = null;
+const gulp       = require('gulp'),
+      notify     = require('gulp-notify'),
+      livereload = require('gulp-livereload')
+      changed    = require('gulp-changed'),
+      gutil      = require('gulp-util'),
+      compass    = require('gulp-compass'),
+      uglify     = require('gulp-uglify'),
+      concat     = require('gulp-concat'),
+      rename     = require('gulp-rename'),
+      source     = require('vinyl-source-stream'),
+      browserify = require('gulp-browserify'),
+      favicons   = require('gulp-favicons'),
+      timer      = null;
 
 var paths = {
     scss: 'resources/assets/scss',
@@ -23,6 +24,7 @@ var paths = {
 
 gulp.task('sass', function() {
     gulp.src(paths.scss + '/**/*.scss')
+        .pipe(changed(paths.css))
         .pipe(compass({
             config_file: 'config.rb',
             style: 'compressed',

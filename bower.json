@@ -2,7 +2,6 @@
     "name": "escape-laravel-bootstrap",
 
     "dependencies": {
-        "normalize.scss": "3.*",
         "jquery": "1.11.*",
         "jquery.inputmask": "3.*",
         "bootstrap-sass": "~3.3.5",
