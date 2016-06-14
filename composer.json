@@ -47,7 +47,11 @@
             "php artisan vendor:publish --tag=public --force"
         ],
 
-        "test": "vendor/bin/phpunit"
+        "test": "vendor/bin/phpunit",
+
+        "deploy": [
+            "git push origin master"
+        ]
     },
 
     "config": {
