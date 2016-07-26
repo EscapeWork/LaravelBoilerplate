@@ -4,7 +4,7 @@ namespace App\Services;
 
 use Illuminate\Mail\Mailer;
 
-class ContactService
+class ContactSenderService
 {
 
     /**

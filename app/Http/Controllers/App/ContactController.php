@@ -3,14 +3,14 @@
 namespace App\Http\Controllers\App;
 
 use App\Http\Requests\ContactRequest;
-use App\Services\ContactService;
+use App\Services\ContactSenderService;
 
 class ContactController extends Controller
 {
 
-    public function send(ContactRequest $request, ContactService $contact)
+    public function send(ContactRequest $request, ContactSenderService $sender)
     {
-        $contact->send($request->all());
+        $sender->send($request->all());
 
         return response([
             'message' => 'Sua mensagem foi enviada com sucesso!',
