@@ -41,7 +41,8 @@ gulp.task('sass', function() {
 gulp.task('uglify:vendor', function() {
     gulp.src([
             'resources/assets/components/jquery/dist/jquery.js',
-            'resources/assets/components/bootstrap-sass/assets/javascripts/bootstrap/modal.js'
+            'resources/assets/components/bootstrap-sass/assets/javascripts/bootstrap/modal.js',
+            // resources/assets/components/jquery.inputmask/dist/inputmask/jquery.inputmask.min.js
         ])
         .pipe(uglify())
         .pipe(concat('vendor.min.js'))
