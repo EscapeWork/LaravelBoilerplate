@@ -70,12 +70,12 @@ return [
         "string"  => "O campo :attribute precisa ter :size caracteres.",
         "array"   => "O campo :attribute precisa conter :size itens.",
     ],
-    "unique"               => "O campo :attribute já está sendo utilizado.",
-    "url"                  => "O campo :attribute precisa ser uma URL válida",
-    "timezone"             => "The :attribute must be a valid zone.",
-    "image_array"          => "Por favor, envie somente imagens",
-    'honeypot'             => 'Não foi possível enviar sua mensagem',
-    'honeytime'            => 'Não foi possível enviar sua mensagem',
+    "unique"         => "O campo :attribute já está sendo utilizado.",
+    "url"            => "O campo :attribute precisa ser uma URL válida",
+    "timezone"       => "The :attribute must be a valid zone.",
+    "image_array"    => "Por favor, envie somente imagens",
+    'honeyform'      => 'Não foi possível enviar sua mensagem',
+    'honeyform_time' => 'Não foi possível enviar sua mensagem',
 
     /*
     |--------------------------------------------------------------------------
