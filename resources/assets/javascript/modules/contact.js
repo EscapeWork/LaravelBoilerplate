@@ -1,7 +1,7 @@
 (function() {
     window.App = window.App || {};
 
-    App.Contact = function(form, options) {
+    App.Contact = function(form, options, callback) {
         this.fetchElements = function() {
             this.$form   = $(form);
             this.$btn    = this.$form.find('.js-btn-submit');
@@ -43,6 +43,10 @@
                             _this.options.conversionAction,
                             _this.options.conversionLabel
                         );
+                    }
+
+                    if (typeof callback === 'function') {
+                        callback();
                     }
                 })
                 .error(function(data) {
