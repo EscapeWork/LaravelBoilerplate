@@ -51,11 +51,15 @@ class Handler extends ExceptionHandler
                              ->with('error', 'Por favor, tente novamente.');
         }
 
-        // Custom error 500 view on production
-        if (app()->environment() == 'production') {
+        return parent::render($request, $e);
+    }
+
+    protected function convertExceptionToResponse(Exception $e)
+    {
+        if (! config('app.debug')) {
             return response()->view('errors.500', [], 500);
         }
 
-        return parent::render($request, $e);
+        return parent::convertExceptionToResponse($e);
     }
 }
