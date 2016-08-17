@@ -10,6 +10,7 @@ const gulp       = require('gulp'),
       source     = require('vinyl-source-stream'),
       browserify = require('gulp-browserify'),
       favicons   = require('gulp-favicons'),
+      imagemin   = require('gulp-imagemin'),
       timer      = null;
 
 var paths = {
@@ -93,6 +94,12 @@ gulp.task('favicons', function() {
 
 gulp.task('default', function() {
     gulp.start('sass', 'scripts:app', 'watch');
+});
+
+gulp.task('imagemin', function() {
+    gulp.src('public/assets/images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('public/assets/images'));
 });
 
 // actual reload function
