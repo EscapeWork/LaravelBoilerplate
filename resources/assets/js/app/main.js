@@ -2,6 +2,8 @@
 // requires
 require('./bootstrap');
 
-(function() {
-    window.App = window.App || {};
-})();
+Vue.component('contact-form', require('../components/ContactForm.vue'));
+
+const app = new Vue({
+    el: 'body'
+});

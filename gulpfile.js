@@ -33,6 +33,18 @@ gulp.task('imagemin', function() {
         .pipe(gulp.dest('public/assets/images'));
 });
 
+gulp.task('favicons', function() {
+    gulp.src('public/assets/images/icons/favicon.png')
+        .pipe(favicons({
+            background: '#fff',
+            path: '/assets/images/icons',
+            html: 'resources/views/app/inc/favicons.blade.php',
+            replace: true
+        }))
+        .on('error', gutil.log)
+        .pipe(gulp.dest('public/assets/images/icons'));
+});
+
 gulp.task('sprites', function() {
     elixir(mix => {
         // spritesmith

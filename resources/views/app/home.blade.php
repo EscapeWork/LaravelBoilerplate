@@ -14,5 +14,7 @@
             <a href="https://instagram.com/escapecria" target="_blank"><i class="fa fa-instagram"></i></a>
             </p>
         </div><!-- .text-center -->
+
+        <contact-form></contact-form>
     </section>
 @stop

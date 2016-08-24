@@ -15,12 +15,10 @@ class ContactRequest extends FormRequest
     public function rules()
     {
         return [
-            'name'           => ['required'],
-            'email'          => ['required', 'email'],
-            'phone'          => ['required'],
-            'msg'            => ['required'],
-            'honeyform'      => ['honeypot'],
-            'honeyform_time' => ['required', 'honeytime:5'],
+            'name'  => ['required'],
+            'email' => ['required', 'email'],
+            'phone' => ['required'],
+            'msg'   => ['required'],
         ];
     }
 
