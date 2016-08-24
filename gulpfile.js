@@ -1,99 +1,30 @@
 const gulp       = require('gulp'),
-      notify     = require('gulp-notify'),
-      livereload = require('gulp-livereload')
-      changed    = require('gulp-changed'),
+      elixir     = require('laravel-elixir')
       gutil      = require('gulp-util'),
-      compass    = require('gulp-compass'),
       uglify     = require('gulp-uglify'),
-      concat     = require('gulp-concat'),
-      rename     = require('gulp-rename'),
-      source     = require('vinyl-source-stream'),
-      browserify = require('gulp-browserify'),
       favicons   = require('gulp-favicons'),
-      imagemin   = require('gulp-imagemin'),
-      timer      = null;
+      imagemin   = require('gulp-imagemin');
 
-var paths = {
-    scss: 'resources/assets/scss',
-    css: 'public/assets/css',
-    views: 'resources/views',
-    js: {
-        source: 'resources/assets/javascript',
-        dest: 'public/assets/js'
-    }
-};
+require('laravel-elixir-vue');
+require('laravel-elixir-spritesmith');
 
-gulp.task('sass', function() {
-    gulp.src(paths.scss + '/**/*.scss')
-        .pipe(changed(paths.css))
-        .pipe(compass({
-            config_file: 'config.rb',
-            style: 'compressed',
-            css: paths.css,
-            sass: paths.scss,
-            relative: false,
-            http_path: 'assets/images',
-            generated_images_path: 'public/assets/images/'
-        }))
-        .on('error', gutil.log)
-        .pipe(gulp.dest(paths.css));
-});
+elixir.config.sourcemaps = false;
 
-gulp.task('uglify:vendor', function() {
-    gulp.src([
-            'resources/assets/components/jquery/dist/jquery.js',
-            'resources/assets/components/bootstrap-sass/assets/javascripts/bootstrap/modal.js',
-            // resources/assets/components/jquery.inputmask/dist/inputmask/jquery.inputmask.min.js
-        ])
-        .pipe(uglify())
-        .pipe(concat('vendor.min.js'))
-        .pipe(gulp.dest('public/assets/vendor'));
-});
+/*
+ |--------------------------------------------------------------------------
+ | Elixir Asset Management
+ |--------------------------------------------------------------------------
+ |
+ | Elixir provides a clean, fluent API for defining some basic Gulp tasks
+ | for your Laravel application. By default, we are compiling the Sass
+ | file for our application, as well as publishing vendor resources.
+ |
+ */
 
-gulp.task('scripts:app', function() {
-    gulp.src([paths.js.source + '/**/*.js', '!' + paths.js.source + '/modules/**'])
-        .pipe(browserify())
-        .on('error', gutil.log)
-        .pipe(uglify())
-        .pipe(rename({
-            suffix: '.min'
-        }))
-        .pipe(gulp.dest('public/assets/js'));
-});
-
-// watching the files
-gulp.task('watch', function() {
-    livereload.listen();
-
-    gulp.watch(paths.scss      + '/**/*.scss', ['sass']);
-    gulp.watch(paths.js.source + '/**/*.js', ['scripts:app']);
-
-    gulp.watch([
-        paths.views   + '/**/*.php',
-        paths.css     + '/**/*.css',
-        paths.js.dest + '/**/*.js'
-    ]).on('change', reload);
-});
-
-gulp.task('reload', function() {
-    gulp.src('gulpfile.js')
-        .pipe(livereload());
-});
-
-gulp.task('favicons', function() {
-    gulp.src('public/assets/images/icons/favicon.png')
-        .pipe(favicons({
-            background: '#fff',
-            path: '/assets/images/icons',
-            html: 'resources/views/app/inc/favicons.blade.php',
-            replace: true
-        }))
-        .on('error', gutil.log)
-        .pipe(gulp.dest('public/assets/images/icons'));
-});
-
-gulp.task('default', function() {
-    gulp.start('sass', 'scripts:app', 'watch');
+elixir(mix => {
+    mix.sass('main.scss')
+       //.sass('sections/home.scss', 'public/assets/css/sections/home.scss')
+       .webpack('app/main.js', 'public/assets/js/app/main.js');
 });
 
 gulp.task('imagemin', function() {
@@ -102,17 +33,14 @@ gulp.task('imagemin', function() {
         .pipe(gulp.dest('public/assets/images'));
 });
 
-// actual reload function
-function reload() {
-    var reload_args = arguments;
-
-    // Stop timeout function to run livereload if this function is ran within the last 250ms
-    if (timer) clearTimeout(timer);
-
-    // Check if any gulp task is still running
-    if (!gulp.isRunning) {
-        timer = setTimeout(function() {
-            livereload.changed.apply(null, reload_args);
-        }, 250);
-    }
-}
+gulp.task('sprites', function() {
+    elixir(mix => {
+        // spritesmith
+        mix.spritesmith('public/assets/images/sprites/default', {
+            imgOutput: 'public/assets/images/sprites',
+            imgPath: '/assets/images/sprites/sprite.png',
+            cssName: '_sprite.scss',
+            cssOutput: 'resources/assets/sass/components'
+        });
+    });
+});

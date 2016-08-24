@@ -2,7 +2,9 @@
 
 namespace App\Http\Requests;
 
-class ContactRequest extends Request
+use Illuminate\Foundation\Http\FormRequest;
+
+class ContactRequest extends FormRequest
 {
 
     public function authorize()

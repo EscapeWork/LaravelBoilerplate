@@ -19,19 +19,13 @@ return [
         'secret' => '',
     ],
 
-    'mandrill' => [
-        'secret' => '',
-    ],
-
-    'ses' => [
-        'key' => '',
-        'secret' => '',
-        'region' => 'us-east-1',
+    'sparkpost' => [
+        'secret' => env('SPARKPOST_SECRET'),
     ],
 
     'stripe' => [
         'model'  => 'App\User',
-        'key' => '',
+        'key'    => '',
         'secret' => '',
     ],
 
