@@ -5,7 +5,9 @@
     "dev": "gulp watch"
   },
   "devDependencies": {
+    "Slidebars": "^2.0.0",
     "bootstrap-sass": "^3.3.7",
+    "bootstrap-select": "^1.11.0",
     "gulp": "^3.9.1",
     "gulp-favicons": "^2.2.6",
     "gulp-imagemin": "^3.0.3",

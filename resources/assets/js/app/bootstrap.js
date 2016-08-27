@@ -2,8 +2,11 @@
 // jquery and bootstrap (and other vendors)
 window._ = require('lodash');
 window.$ = window.jQuery = require('jquery');
+require('Slidebars/dist/slidebars.min');
 require('bootstrap-sass/assets/javascripts/bootstrap/modal.js');
-require('jquery.inputmask/dist/jquery.inputmask.bundle.js');
+
+// require('jquery.inputmask/dist/jquery.inputmask.bundle.js');
+// require('bootstrap-select');
 
 // -------------------------------------------------------
 // VueJS imports and config
@@ -16,6 +19,6 @@ Vue.http.interceptors.push((request, next) => {
 });
 
 // -------------------------------------------------------
-// Our application default modules
+// Nossos modulos padrões
 require('../modules/message');
 // require('../modules/contact');
