@@ -1,12 +1,13 @@
-const gulp       = require('gulp'),
-      elixir     = require('laravel-elixir')
-      gutil      = require('gulp-util'),
-      uglify     = require('gulp-uglify'),
-      favicons   = require('gulp-favicons'),
-      imagemin   = require('gulp-imagemin');
+const gulp        = require('gulp'),
+      elixir      = require('laravel-elixir')
+      gutil       = require('gulp-util'),
+      uglify      = require('gulp-uglify'),
+      favicons    = require('gulp-favicons'),
+      imagemin    = require('gulp-imagemin'),
+      spritesmith = require('gulp.spritesmith');
 
 require('laravel-elixir-vue');
-require('laravel-elixir-spritesmith');
+require('laravel-elixir-livereload');
 
 elixir.config.sourcemaps = false;
 
@@ -25,6 +26,8 @@ elixir(mix => {
     mix.sass('main.scss')
        //.sass('sections/home.scss', 'public/assets/css/sections/home.scss')
        .webpack('app/main.js', 'public/assets/js/app/main.js');
+
+    mix.livereload();
 });
 
 gulp.task('imagemin', function() {
@@ -46,13 +49,12 @@ gulp.task('favicons', function() {
 });
 
 gulp.task('sprites', function() {
-    elixir(mix => {
-        // spritesmith
-        mix.spritesmith('public/assets/images/sprites/default', {
+    gulp.src('public/assets/images/sprites/default/*.png')
+        .pipe(spritesmith({
             imgOutput: 'public/assets/images/sprites',
             imgPath: '/assets/images/sprites/sprite.png',
             cssName: '_sprite.scss',
             cssOutput: 'resources/assets/sass/components'
-        });
-    });
+        }))
+        .pipe(gulp.dest('public/assets/images/sprites'));
 });
