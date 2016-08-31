@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c246572fc57fb981dfdd9dde0f03f952",
-    "content-hash": "4e84f64e1f4b8ea4bb34e5cfd53aa680",
+    "hash": "9bfc77c3dbed20208f391b1e98b5374a",
+    "content-hash": "c42c0dfd91d9b7c62861f325a000fc97",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -216,12 +216,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/EscapeWork/LaravelSteroids.git",
-                "reference": "894aa98d576ba5721f36519fb1ea383306e552af"
+                "reference": "8dcc34cb73197f20a6f1b892364b3900be1debe9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/EscapeWork/LaravelSteroids/zipball/894aa98d576ba5721f36519fb1ea383306e552af",
-                "reference": "894aa98d576ba5721f36519fb1ea383306e552af",
+                "url": "https://api.github.com/repos/EscapeWork/LaravelSteroids/zipball/8dcc34cb73197f20a6f1b892364b3900be1debe9",
+                "reference": "8dcc34cb73197f20a6f1b892364b3900be1debe9",
                 "shasum": ""
             },
             "require": {
@@ -235,7 +235,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.3.*-dev"
+                    "dev-master": "0.4.*-dev"
                 }
             },
             "autoload": {
@@ -268,7 +268,7 @@
             "keywords": [
                 "laravel"
             ],
-            "time": "2016-08-19 17:01:20"
+            "time": "2016-08-30 23:58:02"
         },
         {
             "name": "genealabs/laravel-caffeine",
@@ -458,16 +458,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.3.1",
+            "version": "v5.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "1268b6249358a11d430f8b97ff820afdf099f103"
+                "reference": "7159ffbadc79558a42ece2cdd1ec2e7e13105b5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/1268b6249358a11d430f8b97ff820afdf099f103",
-                "reference": "1268b6249358a11d430f8b97ff820afdf099f103",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/7159ffbadc79558a42ece2cdd1ec2e7e13105b5d",
+                "reference": "7159ffbadc79558a42ece2cdd1ec2e7e13105b5d",
                 "shasum": ""
             },
             "require": {
@@ -581,20 +581,20 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-08-24 09:54:18"
+            "time": "2016-08-26 21:40:26"
         },
         {
             "name": "laravelcollective/html",
-            "version": "dev-master",
+            "version": "v5.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LaravelCollective/html.git",
-                "reference": "c4c87916c34e04aa9d4e860315ab1858304d786a"
+                "reference": "961ce141c16c6b085128f209496c26efd3e681ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/c4c87916c34e04aa9d4e860315ab1858304d786a",
-                "reference": "c4c87916c34e04aa9d4e860315ab1858304d786a",
+                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/961ce141c16c6b085128f209496c26efd3e681ca",
+                "reference": "961ce141c16c6b085128f209496c26efd3e681ca",
                 "shasum": ""
             },
             "require": {
@@ -611,11 +611,6 @@
                 "phpunit/phpunit": "~5.4"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.3-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Collective\\Html\\": "src/"
@@ -640,7 +635,7 @@
             ],
             "description": "HTML and Form Builders for the Laravel Framework",
             "homepage": "http://laravelcollective.com",
-            "time": "2016-08-04 03:49:50"
+            "time": "2016-08-27 23:52:43"
         },
         {
             "name": "league/flysystem",
