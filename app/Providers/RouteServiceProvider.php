@@ -58,7 +58,7 @@ class RouteServiceProvider extends ServiceProvider
             'prefix'     => config('manager.url'),
             'middleware' => ['web', 'manager.authenticated'],
             'as'         => 'manager.',
-            'namespace'  => $this->namespace . 'Manager'
+            'namespace'  => $this->namespace . '\Manager'
         ], function($router) {
             require base_path('routes/manager.php');
         });
