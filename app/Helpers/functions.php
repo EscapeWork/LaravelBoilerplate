@@ -1,7 +1,14 @@
 <?php
 
-function states_select($selected = null)
+function states_select($selected = null, $options = [])
 {
+    $options = array_merge([
+        'class'          => 'form-control',
+        'label'          => 'Estado',
+        'before-options' => ['' => 'Estado'],
+        'extra' => []
+    ], $options);
+
     $states = [
         'AC' => 'Acre',
         'AL' => 'Alagoas',
@@ -32,5 +39,13 @@ function states_select($selected = null)
         'TO' => 'Tocantins',
     ];
 
-    return Form::select('uf', array_merge(['' => 'Estado'], $states), $selected, ['class' => 'form-control', 'data-selectize' => true]);
+    return Form::select(
+        'uf',
+        array_merge($options['before-options'], $states),
+        $selected,
+        array_merge(
+            ['class' => $options['class']],
+            $options['extra']
+        )
+    );
 }
