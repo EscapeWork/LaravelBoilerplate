@@ -21,8 +21,3 @@
     curl https://gist.githubusercontent.com/luisdalmolin/66cae887fe655491c5cad413d544f434/raw/994a021503dd8c626c4792f51f6609803ae26355/post-receive.sh -o post-receive
     chmod +x post-receive
 @endtask
-
-@task('deploy')
-    git push origin master
-    git push deploy master
-@endtask
