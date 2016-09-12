@@ -30,7 +30,7 @@
                     _this.$btn.prop('disabled', true);
                 }
             })
-                .success(function(data) {
+                .done(function(data) {
                     App.Messages.message(data.message);
                     _this.clearForm();
 
