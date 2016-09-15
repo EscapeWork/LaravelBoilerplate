@@ -1,4 +1,4 @@
-@servers(['locaweb' => 'hsclimatizacoes1@hsclimatizacoes1.hospedagemdesites.ws'])
+@servers(['locaweb' => 'user@server.com'])
 
 @task('configure-php')
     {{-- http://wiki.locaweb.com.br/pt-br/Como_alterar_a_vers%C3%A3o_do_PHP --}}
