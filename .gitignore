@@ -8,4 +8,4 @@ thumbs.db
 public/files
 public/assets/dist
 .env
-tmp
+/tmp
