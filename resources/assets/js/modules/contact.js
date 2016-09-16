@@ -28,9 +28,9 @@
 
                 beforeSend: function() {
                     _this.$btn.prop('disabled', true);
-                }
-            })
-                .done(function(data) {
+                },
+
+                success: function(data) {
                     App.Messages.message(data.message);
                     _this.clearForm();
 
@@ -48,12 +48,14 @@
                     if (typeof callback === 'function') {
                         callback();
                     }
-                })
-                .error(function(data) {
+                },
+
+                error: function(data) {
                     if (data !== undefined) {
                         App.Messages.errors(data.responseJSON);
                     }
-                })
+                }
+            })
                 .always(function() {
                     _this.$btn.prop('disabled', false);
                 });
