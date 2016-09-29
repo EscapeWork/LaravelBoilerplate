@@ -1,5 +1,11 @@
 @servers(['locaweb' => 'gabrieladawson1@gabrieladawson1.hospedagemdesites.ws', 'localhost' => '127.0.0.1'])
 
+<?php
+/* configure aqui as variáveis */
+$project = 'your-project-name';
+$ftpuser = 'your-ftp-user';
+?>
+
 @task('configure-php', ['on' => 'locaweb'])
     {{-- http://wiki.locaweb.com.br/pt-br/Como_alterar_a_vers%C3%A3o_do_PHP --}}
     cd ~/
