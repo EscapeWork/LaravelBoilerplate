@@ -23,7 +23,7 @@ elixir.config.sourcemaps = false;
  */
 
 elixir(mix => {
-    mix.sass('main.scss')
+    mix.sass('main.scss', 'public/assets/css/main.css')
        //.sass('sections/home.scss', 'public/assets/css/sections/home.scss')
        .webpack('app/main.js', 'public/assets/js/app/main.js');
 
