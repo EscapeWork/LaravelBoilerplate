@@ -53,8 +53,7 @@ gulp.task('sprites', function() {
         .pipe(spritesmith({
             imgOutput: 'public/assets/images/sprites',
             imgPath: '/assets/images/sprites/sprite.png',
-            cssName: '_sprite.scss',
-            cssOutput: 'resources/assets/sass/components'
+            cssName: '../../../../resources/assets/sass/components/_sprite.scss',
         }))
         .pipe(gulp.dest('public/assets/images/sprites'));
 });
