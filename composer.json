@@ -6,7 +6,7 @@
         "laravel/framework": "5.3.*",
         "laravelcollective/html": "5.3.*",
         "escapework/laravel-steroids": "0.5.*",
-        "escapework/laravel-asset-versioning": "0.4.*",
+        "escapework/laravel-asset-versioning": "0.5.*",
         "genealabs/laravel-caffeine": "0.3.*",
         "msurguy/honeypot": "1.0.*"
     },

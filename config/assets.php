@@ -4,10 +4,17 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Environments that versioning the content
+    | Environments that should versioning the assets
     |--------------------------------------------------------------------------
     */
    'environments' => ['production'],
+
+   /*
+    |--------------------------------------------------------------------------
+    | Should this package add HTTP2 server push links
+    |--------------------------------------------------------------------------
+    */
+   'http2-server-push' => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -16,13 +23,18 @@ return [
     */
    'types' => [
         'css' => [
-            'origin_dir' => 'assets/css',
-            'dist_dir'   => 'assets/dist/css',
+            [
+                'origin_dir' => 'assets/css',
+                'dist_dir'   => 'assets/dist/css',
+            ],
         ],
 
         'js' => [
-            'origin_dir' => 'assets/js',
-            'dist_dir'   => 'assets/dist/js',
+            [
+                'origin_dir' => 'assets/js',
+                'dist_dir'   => 'assets/dist/js',
+            ],
         ],
     ],
+
 ];
