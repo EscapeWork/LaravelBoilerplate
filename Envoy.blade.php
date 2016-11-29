@@ -1,4 +1,4 @@
-@servers(['locaweb' => 'gabrieladawson1@gabrieladawson1.hospedagemdesites.ws', 'localhost' => '127.0.0.1'])
+@servers(['locaweb' => 'ssh@host', 'localhost' => '127.0.0.1'])
 
 <?php
 /* configure aqui as variáveis */
