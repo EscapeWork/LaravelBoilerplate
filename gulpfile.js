@@ -25,13 +25,13 @@ elixir.config.sourcemaps = false;
 elixir(mix => {
     mix.sass('main.scss', 'public/assets/css/main.css')
        //.sass('sections/home.scss', 'public/assets/css/sections/home.scss')
-       .webpack('app/main.js', 'public/assets/js/app/main.js');
+       .webpack('app/main.js', 'public/assets/js/app/main.min.js');
 
     mix.livereload();
 });
 
 gulp.task('imagemin', function() {
-    gulp.src('public/assets/images/*')
+    gulp.src('public/assets/images/**/*')
         .pipe(imagemin())
         .pipe(gulp.dest('public/assets/images'));
 });
