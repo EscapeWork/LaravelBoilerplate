@@ -3,6 +3,7 @@
     "description": "The Agência Escape Laravel Framework bootstrap.",
 
     "require": {
+        "php": ">=5.6.4",
         "laravel/framework": "5.3.*",
         "laravelcollective/html": "5.3.*",
         "escapework/laravel-steroids": "0.5.*",
@@ -40,12 +41,14 @@
 
     "scripts": {
         "post-install-cmd": [
-            "php artisan clear-compiled",
+            "Illuminate\\Foundation\\ComposerScripts::postInstall",
+            "App\\ComposerScripts::postInstall",
             "php artisan optimize"
         ],
 
         "post-update-cmd": [
-            "php artisan clear-compiled",
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "App\\ComposerScripts::postUpdate",
             "php artisan optimize",
             "php artisan vendor:publish --tag=public --force"
         ],
