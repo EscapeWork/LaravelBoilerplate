@@ -33,7 +33,7 @@ elixir(mix => {
 gulp.task('imagemin', function() {
     gulp.src(['public/assets/images/**/*.jpg', 'public/assets/images/**/*.png', '!public/assets/images/icons', '!public/assets/images/vendor'])
         .pipe(tingpng('VYVWf4euo00lKqF6YczN9bx5lnPN1l1G'))
-        .pipe(gulp.dest('assets/images'));
+        .pipe(gulp.dest('public/assets/images'));
 });
 
 gulp.task('favicons', function() {
