@@ -3,7 +3,7 @@ const gulp        = require('gulp'),
       gutil       = require('gulp-util'),
       uglify      = require('gulp-uglify'),
       favicons    = require('gulp-favicons'),
-      imagemin    = require('gulp-imagemin'),
+      tingpng     = require('gulp-tinypng'),
       spritesmith = require('gulp.spritesmith');
 
 require('laravel-elixir-vue');
@@ -31,9 +31,9 @@ elixir(mix => {
 });
 
 gulp.task('imagemin', function() {
-    gulp.src('public/assets/images/**/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('public/assets/images'));
+    gulp.src(['public/assets/images/**/*.jpg', 'public/assets/images/**/*.png', '!public/assets/images/icons', '!public/assets/images/vendor'])
+        .pipe(tingpng('VYVWf4euo00lKqF6YczN9bx5lnPN1l1G'))
+        .pipe(gulp.dest('assets/images'));
 });
 
 gulp.task('favicons', function() {
