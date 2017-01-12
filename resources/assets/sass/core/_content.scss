@@ -2,21 +2,34 @@
 // SCSS > Content
 // ========================================================================
 
-.content {}
+// swiper
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
 
-    .content-title {
 
+// slider
+.swiper-slider {
+
+    .swiper-slide {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
     }
+}
 
-    .content-text {
-        font-size: 14px;
-        line-height: 1.4em;
 
-        p {
-            margin: 0 0 25px;
+// gallery
+.swiper-gallery {
 
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
+    .swiper-slide {
+        background: #EEE;
+        height: 300px;
     }
+}
+
+
+// section
+.section {
+}

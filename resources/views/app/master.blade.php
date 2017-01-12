@@ -21,40 +21,151 @@
         <link rel="stylesheet" type="text/css" href="{{ Asset::v('assets/css/main.css') }}">
     @show
 </head>
-<body>
-    <header class="header">
-        <div class="container">
 
-        </div><!-- .container -->
-    </header><!-- .header -->
+<body class="cbp-spmenu-push">
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-sidebar">
+        <a id="show-menu-push" class="btn-menu" href="javascript:void(0);">
+            <span class="btn-bar"></span>
+            <span class="btn-bar"></span>
+            <span class="btn-bar"></span>
+        </a>
 
-    <main class="content">
-        @yield('content')
-    </main><!-- .content -->
+        <ul class="main-menu">
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link">Menu 1</a>
+            </li>
 
-    <footer class="footer">
-        <div class="container">
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link">Menu 2</a>
+            </li>
 
-        </div><!-- .container -->
-    </footer><!-- .footer -->
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link">Menu 3</a>
+            </li>
+        </ul>
+        {{-- /main-menu --}}
+    </nav>
+    {{-- /menu-sidebar --}}
 
-    {{-- message modal --}}
-    <div class="modal fade" id="modal-message">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body js-modal-body">
+    <div class="main">
+        <header class="header">
+            <div class="container">
+                header
+            </div>
+            {{-- /container --}}
+        </header>
+        {{-- /header --}}
 
-                </div><!-- /.modal-body -->
+        <main class="content">
+            @yield('content')
+        </main>
+        {{-- /content --}}
 
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-sm" data-dismiss="modal">Fechar</button>
-                </div><!-- /.modal-footer -->
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+        <footer class="footer">
+            <div class="container">
+                footer
+            </div>
+            {{-- /container --}}
+        </footer>
+        {{-- /footer --}}
+
+        {{-- message modal --}}
+        <div class="modal fade" id="modal-message">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body js-modal-body">
+                    </div>
+                    {{-- /modal-body --}}
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm" data-dismiss="modal">Fechar</button>
+                    </div>
+                    {{-- /modal-footer --}}
+                </div>
+                {{-- /modal-content --}}
+            </div>
+            {{-- /modal-dialog --}}
+        </div>
+        {{-- /modal --}}
+    </div>
+    {{-- /main --}}
 
     @section('scripts')
         <script type="text/javascript" src="{{ Asset::v('assets/js/app/main.min.js') }}"></script>
+
+        {{-- /verificar --}}
+        <script type="text/javascript">
+            /*!
+             * classie - class helper functions
+             * from bonzo https://github.com/ded/bonzo
+             *
+             * classie.has( elem, 'my-class' ) -> true/false
+             * classie.add( elem, 'my-new-class' )
+             * classie.remove( elem, 'my-unwanted-class' )
+             * classie.toggle( elem, 'my-class' )
+             */
+
+            /*jshint browser: true, strict: true, undef: true */
+
+            ( function( window ) {
+
+            'use strict';
+
+            // class helper functions from bonzo https://github.com/ded/bonzo
+
+            function classReg( className ) {
+              return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+            }
+
+            // classList support for class management
+            // altho to be fair, the api sucks because it won't accept multiple classes at once
+            var hasClass, addClass, removeClass;
+
+            if ( 'classList' in document.documentElement ) {
+              hasClass = function( elem, c ) {
+                return elem.classList.contains( c );
+              };
+              addClass = function( elem, c ) {
+                elem.classList.add( c );
+              };
+              removeClass = function( elem, c ) {
+                elem.classList.remove( c );
+              };
+            }
+            else {
+              hasClass = function( elem, c ) {
+                return classReg( c ).test( elem.className );
+              };
+              addClass = function( elem, c ) {
+                if ( !hasClass( elem, c ) ) {
+                  elem.className = elem.className + ' ' + c;
+                }
+              };
+              removeClass = function( elem, c ) {
+                elem.className = elem.className.replace( classReg( c ), ' ' );
+              };
+            }
+
+            function toggleClass( elem, c ) {
+              var fn = hasClass( elem, c ) ? removeClass : addClass;
+              fn( elem, c );
+            }
+
+            window.classie = {
+              // full names
+              hasClass: hasClass,
+              addClass: addClass,
+              removeClass: removeClass,
+              toggleClass: toggleClass,
+              // short names
+              has: hasClass,
+              add: addClass,
+              remove: removeClass,
+              toggle: toggleClass
+            };
+
+            })( window );
+        </script>
     @show
 </body>
 </html>

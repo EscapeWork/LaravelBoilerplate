@@ -9,12 +9,13 @@
 @import "components/_normalize";
 @import "components/bootstrap";
 @import "vendor/font-awesome";
-@import "vendor/slidebars";
 @import "node_modules/bootstrap-select/sass/bootstrap-select";
+@import "node_modules/swiper/dist/css/swiper";
 
 // ----------------------------------
 // Components
 @import "components/font-face";
+@import "components/menu-sidebar";
 @import "components/helpers";
 @import "components/buttons";
 @import "components/forms";
