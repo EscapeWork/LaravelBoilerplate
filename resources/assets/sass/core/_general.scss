@@ -10,7 +10,14 @@
     @include box-sizing(border-box);
 }
 
+html,
 body {
+    min-height: 100%;
+    height: 100%;
+}
+
+body {
+    text-align: center;
     font-family: $font-default;
     color: $color-text;
 }

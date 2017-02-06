@@ -5,7 +5,6 @@
     "dev": "gulp watch"
   },
   "devDependencies": {
-    "Slidebars": "^2.0.0",
     "bootstrap-sass": "^3.3.7",
     "bootstrap-select": "^1.11.0",
     "gulp": "^3.9.1",
@@ -25,6 +24,6 @@
     "vue-resource": "^1.0.3"
   },
   "dependencies": {
-    "gulp-tinypng": "^1.0.2"
+    "swiper": "^3.4.1"
   }
 }

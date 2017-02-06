@@ -1,0 +1,102 @@
+// ================================================================================================
+// Menu sidebar
+// ================================================================================================
+
+.btn-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 8px;
+    width: 48px;
+    height: 46px;
+    font-size: 0;
+    line-height: 0;
+    background: #47a3da;
+    display: inline-block;
+    @include transition(.3s linear);
+
+    &.active {
+
+        .btn-bar {
+            @include opacity(0);
+            visibility: hidden;
+
+            &:first-child,
+            &:last-child {
+                @include opacity(1);
+                visibility: visible;
+            }
+
+            &:first-child {
+                -ms-transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+                top: 8px;
+            }
+
+            &:last-child {
+                -ms-transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                top: -8px;
+            }
+        }
+    }
+}
+
+    .btn-bar {
+        position: relative;
+        width: 100%;
+        height: 3px;
+        margin-top: 5px;
+        background: #FFF;
+        display: inline-block;
+        @include border-radius(10px);
+        @include transition(.3s linear);
+    }
+
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+    @include transition(.3s linear);
+}
+
+.cbp-spmenu {
+    background: #47a3da;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.cbp-spmenu-vertical {
+    width: 240px;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.cbp-spmenu-left {
+    left: -240px;
+
+    &.cbp-spmenu-open {
+        left: 0px;
+
+        .btn-menu {
+            left: 240px;
+        }
+    }
+}
+
+.cbp-spmenu-push {
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+
+    &.cbp-spmenu-push-toright {
+        left: 240px;
+    }
+
+    &.cbp-spmenu-push-toleft {
+        left: -240px;
+    }
+}

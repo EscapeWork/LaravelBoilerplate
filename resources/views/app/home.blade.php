@@ -1,20 +1,39 @@
 @extends('app.master')
 
 @section('content')
-    <section class="container">
-        <div class="text-center">
-            <h1>Hello from Agência Escape</h1>
+    <section class="section">
+        <div class="container">
+            <div class="swiper-container swiper-slider">
+                <div class="swiper-wrapper">
+                    <a href="javascript:void(0);" class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/1)"></a>
+                    <a href="javascript:void(0);" class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/2)"></a>
+                    <a href="javascript:void(0);" class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/3)"></a>
+                </div>
+                {{-- /swiper-wrapper --}}
 
-            <a href="http://www.escape.ppg.br" target="_blank">
-                <img width="400" src="https://s3.amazonaws.com/escape-criativacao/imagens/logotipos/escape-logotipo-azul.png" alt="Agência Escape">
-            </a>
+                <div class="swiper-pagination slider-pagination"></div>
+                {{-- /slider pagination --}}
 
-            <p>Now with Font Awesome icons support
-            <a href="https://www.facebook.com/escapecria" target="_blank"><i class="fa fa-facebook"></i></a>
-            <a href="https://instagram.com/escapecria" target="_blank"><i class="fa fa-instagram"></i></a>
-            </p>
-        </div><!-- .text-center -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                {{-- /slider navigation  --}}
+            </div>
+            {{-- /slider --}}
 
-        <contact-form></contact-form>
+            <div class="swiper-container swiper-gallery">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                </div>
+
+                <div class="swiper-pagination gallery-pagination"></div>
+                {{-- /gallery pagination --}}
+            </div>
+            {{-- /gallery --}}
+        </div>
+        {{-- /container --}}
     </section>
+    {{-- /section --}}
 @stop

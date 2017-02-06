@@ -6,17 +6,11 @@ This is a personal Laravel Boilerplate, by [Agência Escape](http://www.escape.p
 
 ```sh
 $ git clone git@github.com:EscapeWork/LaravelBoilerplate.git [your-project-name] && cd $_ && rm -rf .git
+$ cp .env.example .env
 $ composer install
 $ php artisan key:generate
-$ npm install
+$ yarn
 ```
-
-This command will:
-
-* Clone this repository;
-* Install composer dependencies;
-* Install npm dependencies;
-* Generate Laravel key;
 
 ***
 

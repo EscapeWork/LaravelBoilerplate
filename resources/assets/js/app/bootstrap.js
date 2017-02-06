@@ -1,7 +1,6 @@
 // -------------------------------------------------------
 // jquery and bootstrap (and other vendors)
 window.$ = window.jQuery = require('jquery');
-require('Slidebars/dist/slidebars.min');
 require('bootstrap-sass/assets/javascripts/bootstrap/modal.js');
 
 // require('jquery.inputmask/dist/jquery.inputmask.bundle.js');
