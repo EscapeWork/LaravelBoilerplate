@@ -11,21 +11,19 @@ const app = new Vue({
     window.App = window.App || {};
 
     // Menu sidebar
-    App.Menu = function() {
-        return {
-            init: function(){
+    App.Menu = {
+        init: function() {
                 var menuLeft = document.getElementById('menu-sidebar'),
                     showLeftPush = document.getElementById('show-menu-push'),
                     body = document.body;
 
-                showLeftPush.onclick = function() {
-                    classie.toggle( this, 'active' );
-                    classie.toggle( body, 'cbp-spmenu-push-toright' );
-                    classie.toggle( menuLeft, 'cbp-spmenu-open' );
-                };
-            }
-        };
-    }();
+                $('#show-menu-push').on('click', function() {
+                    $(this).toggleClass('active');
+                    $(body).toggleClass('cbp-spmenu-push-toright');
+                    $('#menu-sidebar').toggleClass('cbp-spmenu-open');
+                });
+        }
+    };
 
     // Slider Banner
     App.SliderBanner = function() {
