@@ -13,15 +13,45 @@ const app = new Vue({
     // Menu sidebar
     App.Menu = {
         init: function() {
-                var menuLeft = document.getElementById('menu-sidebar'),
-                    showLeftPush = document.getElementById('show-menu-push'),
-                    body = document.body;
+            this.fetchElements();
+            this.bindUIEvents();
+        },
 
-                $('#show-menu-push').on('click', function() {
-                    $(this).toggleClass('active');
-                    $(body).toggleClass('cbp-spmenu-push-toright');
-                    $('#menu-sidebar').toggleClass('cbp-spmenu-open');
+        fetchElements: function() {
+            this.$body    = $('body');
+            this.$menu    = $('#menu-sidebar');
+            this.$btnOpen = $('.js-btn-menu-responsive');
+        },
+
+        bindUIEvents: function() {
+            var _this = this;
+
+            this.$btnOpen.on('click', function() {
+                _this.toggle();
+
+                if (_this.$btnOpen.hasClass('active')) {
+                    _this.listenToCloseEvent();
+                }
+            });
+        },
+
+        toggle: function() {
+            this.$btnOpen.toggleClass('active');
+            this.$body.toggleClass('cbp-spmenu-push-toright');
+            this.$menu.toggleClass('cbp-spmenu-open');
+        },
+
+        listenToCloseEvent: function() {
+            var _this = this;
+
+            window.setTimeout(function() {
+                _this.$body.on('click.menu', function(e) {
+                    if ($(e.target).closest('.cbp-spmenu').length === 0) {
+                        _this.toggle();
+                        _this.$body.off('click.menu');
+                    }
                 });
+            }, 50);
         }
     };
 
