@@ -11,7 +11,7 @@ const app = new Vue({
     window.App = window.App || {};
 
     // Menu sidebar
-    App.Menu = {
+    App.MenuResponsive = {
         init: function() {
             this.fetchElements();
             this.bindUIEvents();
@@ -101,7 +101,7 @@ const app = new Vue({
 
 
     //init
-    App.Menu.init();
+    App.MenuResponsive.init();
     App.SliderBanner.init();
     App.Gallery.init();
 })();
