@@ -24,7 +24,7 @@
 
 <body class="cbp-spmenu-push">
     <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-sidebar">
-        <a id="show-menu-push" class="btn-menu" href="javascript:void(0);">
+        <a class="btn-menu js-btn-menu-responsive" href="javascript:void(0);">
             <span class="btn-bar"></span>
             <span class="btn-bar"></span>
             <span class="btn-bar"></span>
