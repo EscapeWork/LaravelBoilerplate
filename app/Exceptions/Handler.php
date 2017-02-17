@@ -50,6 +50,10 @@ class Handler extends ExceptionHandler
                              ->with('error', 'Por favor, tente novamente.');
         }
 
+        if ($exception instanceof \Illuminate\Auth\Access\AuthorizationException) {
+            return response()->view('errors.unauthorized', [], 401);
+        }
+
         return parent::render($request, $exception);
     }
 
