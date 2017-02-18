@@ -46,7 +46,7 @@ const app = new Vue({
 
             window.setTimeout(function() {
                 _this.$body.on('click.menu', function(e) {
-                    if ($(e.target).closest('.cbp-spmenu').length === 0) {
+                    if ($(e.target).closest('.cbp-spmenu').length === 0 && $(e.target).closest('.js-btn-menu-responsive').length === 0) {
                         _this.toggle();
                         _this.$body.off('click.menu');
                     }
