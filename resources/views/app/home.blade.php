@@ -32,6 +32,17 @@
                 {{-- /gallery pagination --}}
             </div>
             {{-- /gallery --}}
+
+            <form action="{{ route('contact.send') }}" method="post">
+                {{ csrf_field() }}
+                {!! Honeypot::generate('honeyform', 'honeyform_time') !!}
+
+                <input type="text" name="name" class="form-control" placeholder="Nome">
+                <input type="email" name="email" class="form-control" placeholder="E-mail">
+                <input type="tel" name="phone" class="form-control" placeholder="Telefone">
+                <textarea name="msg" id="msg" rows="10" class="form-control" placeholder="Mensagem"></textarea>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
         </div>
         {{-- /container --}}
     </section>

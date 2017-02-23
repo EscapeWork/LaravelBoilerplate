@@ -3,14 +3,16 @@
 namespace App\Http\Controllers\App;
 
 use App\Http\Requests\ContactRequest;
-use App\Services\ContactSenderService;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactSent;
 
 class ContactController extends Controller
 {
 
-    public function send(ContactRequest $request, ContactSenderService $sender)
+    public function send(ContactRequest $request)
     {
-        $sender->send($request->all());
+        Mail::to(config('mail.to'))
+            ->send(new ContactSent($request->all()));
 
         return response([
             'message' => 'Sua mensagem foi enviada com sucesso!',
