@@ -14,6 +14,7 @@
         @include('app.inc.seo', [
             'title' => 'Laravel Boilerplate',
             'route' => route('home'),
+            'image' => asset('assets/images/social/open-graph.png')
         ])
     @show
 

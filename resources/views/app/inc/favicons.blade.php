@@ -25,8 +25,6 @@
 <meta name="msapplication-TileColor" content="#fff">
 <meta name="msapplication-TileImage" content="/assets/images/icons/mstile-144x144.png">
 <meta name="msapplication-config" content="/assets/images/icons/browserconfig.xml">
-<meta property="twitter:image" content="/assets/images/icons/twitter.png">
-<meta property="og:image" content="/assets/images/icons/open-graph.png">
 <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/assets/images/icons/apple-touch-startup-image-320x460.png">
 <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/assets/images/icons/apple-touch-startup-image-640x920.png">
 <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/assets/images/icons/apple-touch-startup-image-640x1096.png">
