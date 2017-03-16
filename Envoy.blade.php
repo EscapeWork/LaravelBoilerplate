@@ -15,7 +15,7 @@ $ftpuser = 'your-ftp-user';
 @endtask
 
 @task('generate-ssh-key', ['on' => 'locaweb'])
-    ssh-keygen -t rsa
+    ssh-keygen -f id_rsa -t rsa -N ''
 @endtask
 
 @task('configure-app-directory', ['on' => 'locaweb'])
