@@ -40,11 +40,7 @@
     },
 
     "scripts": {
-        "post-install-cmd": [
-            "Illuminate\\Foundation\\ComposerScripts::postInstall",
-            "App\\ComposerScripts::postInstall",
-            "php artisan optimize"
-        ],
+        "post-install-cmd": [],
 
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",

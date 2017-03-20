@@ -94,5 +94,9 @@
     @section('scripts')
         <script type="text/javascript" src="{{ Asset::v('assets/js/app/main.min.js') }}"></script>
     @show
+
+    @if (config('app.env') == 'local')
+        <script src="http://localhost:35729/livereload.js"></script>
+    @endif
 </body>
 </html>
