@@ -1,4 +1,5 @@
-<link rel="icon" type="image/png" sizes="192x192" href="/assets/images/icons/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/images/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="230x230" href="/assets/images/icons/favicon-230x230.png">
 <link rel="manifest" href="/assets/images/icons/manifest.json">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#fff">
@@ -16,15 +17,6 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title">
 <link rel="icon" type="image/png" sizes="228x228" href="/assets/images/icons/coast-228x228.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/assets/images/icons/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="230x230" href="/assets/images/icons/favicon-230x230.png">
-<link rel="shortcut icon" href="/assets/images/icons/favicon.ico">
-<link rel="yandex-tableau-widget" href="/assets/images/icons/yandex-browser-manifest.json">
-<meta name="msapplication-TileColor" content="#fff">
-<meta name="msapplication-TileImage" content="/assets/images/icons/mstile-144x144.png">
-<meta name="msapplication-config" content="/assets/images/icons/browserconfig.xml">
 <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/assets/images/icons/apple-touch-startup-image-320x460.png">
 <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/assets/images/icons/apple-touch-startup-image-640x920.png">
 <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/assets/images/icons/apple-touch-startup-image-640x1096.png">
@@ -35,3 +27,11 @@
 <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/assets/images/icons/apple-touch-startup-image-768x1004.png">
 <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/assets/images/icons/apple-touch-startup-image-1496x2048.png">
 <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/assets/images/icons/apple-touch-startup-image-1536x2008.png">
+<meta name="msapplication-TileColor" content="#fff">
+<meta name="msapplication-TileImage" content="/assets/images/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="/assets/images/icons/browserconfig.xml">
+<link rel="yandex-tableau-widget" href="/assets/images/icons/yandex-browser-manifest.json">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/images/icons/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+<link rel="shortcut icon" href="/assets/images/icons/favicon.ico">
