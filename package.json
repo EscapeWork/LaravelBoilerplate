@@ -1,14 +1,16 @@
 {
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules",
-    "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
-    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
-    "production": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "devDependencies": {
     "bootstrap-sass": "^3.3.7",
-    "bootstrap-select": "^1.11.0",
     "gulp": "^3.9.1",
     "gulp-favicons": "^2.2.6",
     "gulp-imagemin": "^3.0.3",
@@ -17,7 +19,8 @@
     "gulp-util": "^3.0.7",
     "jquery": "^3.1.0",
     "jquery.inputmask": "^3.3.1",
-    "laravel-mix": "^0.8.0",
+    "cross-env": "^3.2.3",
+    "laravel-mix": "^0.*",
     "vue": "^2.*",
     "vue-resource": "^1.0.3",
     "webpack-livereload-plugin": "^0.10.0"
