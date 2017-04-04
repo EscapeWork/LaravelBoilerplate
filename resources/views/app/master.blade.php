@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta property="fb:app_id" content="326686580683711">
+    <meta property="fb:app_id" content="{{ config('services.facebook.app_id') }}">
 
     {{-- favicons --}}
     @include('app.inc.favicons')

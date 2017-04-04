@@ -29,4 +29,7 @@ return [
         'secret' => '',
     ],
 
+    'facebook' => [
+        'app_id' => '',
+    ],
 ];
