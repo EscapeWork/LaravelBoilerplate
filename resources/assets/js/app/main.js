@@ -1,11 +1,10 @@
 // -------------------------------------------------------------------------
 // requires
 require('./bootstrap');
-require('swiper');
 
-const app = new Vue({
-    el: 'body'
-});
+// const app = new Vue({
+//     el: 'body'
+// });
 
 (function() {
     window.App = window.App || {};

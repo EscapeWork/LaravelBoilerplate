@@ -26,6 +26,8 @@
     "webpack-livereload-plugin": "^0.10.0"
   },
   "dependencies": {
+    "bootstrap-select": "^1.12.2",
+    "sweetalert": "^1.1.3",
     "swiper": "^3.4.1"
   }
 }

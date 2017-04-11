@@ -1,34 +1,36 @@
-(function() {
-    window.App = window.App || {};
+window.App = window.App || {};
 
-    // =============================================================================
-    // this work with laravel form requests responses
-    // usage: App.Messages.show(messages)
-    App.Messages = {
-        init: function() {
-            this.$modal = $('#modal-message');
-            this.$body  = this.$modal.find('.js-modal-body');
-        },
+// =============================================================================
+// this work with laravel form requests responses
+// usage: App.Messages.show(messages)
+App.Messages = {
+    errors: function(messages) {
+        var msg = [];
 
-        errors: function(messages) {
-            var msg = [];
+        $.each(messages, function(i, message) {
+            msg.push(message[0]);
+        });
 
-            $.each(messages, function(i, message) {
-                msg.push(message[0]);
-            });
+        swal({
+            title: 'Ocorreram alguns erros:',
+            text: msg.join('<br>'),
+            type: 'warning'
+        });
+    },
 
-            this.show(msg.join('<br>'));
-        },
-
-        message: function(message) {
-            this.show(message);
-        },
-
-        show: function(content) {
-            this.$body.html(content);
-            this.$modal.modal('show');
+    message: function(message, title) {
+        if (typeof(title) === 'undefined') {
+            title = 'Mensagem';
         }
-    };
 
-    App.Messages.init();
-})();
+        swal({
+            title: title,
+            text: message,
+            type: 'success'
+        });
+    },
+
+    show: function(message, title) {
+        this.message(message, title);
+    }
+};

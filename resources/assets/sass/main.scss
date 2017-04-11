@@ -11,6 +11,7 @@
 @import "vendor/font-awesome";
 @import "node_modules/bootstrap-select/sass/bootstrap-select";
 @import "node_modules/swiper/dist/css/swiper";
+@import "node_modules/sweetalert/dist/sweetalert";
 
 // ----------------------------------
 // Components
@@ -19,6 +20,7 @@
 @import "components/helpers";
 @import "components/buttons";
 @import "components/forms";
+@import "components/loader";
 
 // ----------------------------------
 // Core
