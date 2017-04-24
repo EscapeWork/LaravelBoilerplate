@@ -3,7 +3,7 @@ services:
   nginx:
     image: shippingdocker/nginx:latest
     ports:
-     - "80:80"
+     - "${APP_PORT}:80"
     volumes:
      - ./:/var/www/html
     networks:
@@ -20,6 +20,8 @@ services:
      - appnet
   db:
     image: mysql:5.7
+    ports:
+        - "${DB_PORT}:3306"
     environment:
       MYSQL_ROOT_PASSWORD: secret
       MYSQL_DATABASE: homestead
