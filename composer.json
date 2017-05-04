@@ -9,7 +9,8 @@
         "escapework/laravel-steroids": "0.6.*",
         "escapework/laravel-asset-versioning": "0.6.*",
         "genealabs/laravel-caffeine": "0.3.*",
-        "msurguy/honeypot": "1.0.*"
+        "msurguy/honeypot": "1.0.*",
+        "predis/predis": "^1.1"
     },
 
     "require-dev": {
