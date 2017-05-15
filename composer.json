@@ -8,7 +8,7 @@
         "laravelcollective/html": "5.4.*",
         "escapework/laravel-steroids": "0.6.*",
         "escapework/laravel-asset-versioning": "0.6.*",
-        "genealabs/laravel-caffeine": "0.3.*",
+        "genealabs/laravel-caffeine": "0.4.*",
         "msurguy/honeypot": "1.0.*",
         "predis/predis": "^1.1"
     },
