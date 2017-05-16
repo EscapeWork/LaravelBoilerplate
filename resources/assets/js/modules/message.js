@@ -13,6 +13,7 @@ App.Messages = {
 
         swal({
             title: 'Ocorreram alguns erros:',
+            html: true,
             text: msg.join('<br>'),
             type: 'warning'
         });

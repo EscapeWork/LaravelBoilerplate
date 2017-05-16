@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta property="fb:app_id" content="{{ config('services.facebook.app_id') }}">
+    <meta name="author" content="Agência Escape">
 
     {{-- favicons --}}
     @include('app.inc.favicons')
