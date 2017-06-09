@@ -11,15 +11,15 @@ gulp.task('imagemin', function() {
 });
 
 gulp.task('favicons', function() {
-    gulp.src('public/assets/images/icons/favicon.png')
+    gulp.src('public/assets/icons/favicon.png')
         .pipe(favicons({
             background: '#fff',
-            path: '/assets/images/icons',
+            path: '/assets/icons',
             html: 'resources/views/app/inc/favicons.blade.php',
             replace: true
         }))
         .on('error', gutil.log)
-        .pipe(gulp.dest('public/assets/images/icons'));
+        .pipe(gulp.dest('public/assets/icons'));
 });
 
 gulp.task('default', shell.task([
