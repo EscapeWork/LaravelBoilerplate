@@ -18,7 +18,7 @@
     "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.7",
     "jquery": "^3.1.0",
-    "jquery.inputmask": "^3.3.1",
+    "inputmask": "^3.3.7",
     "cross-env": "^3.2.3",
     "laravel-mix": "1.*",
     "vue": "^2.*",
