@@ -6,7 +6,6 @@ use Closure, Session;
 
 class CheckAdwordsReferral
 {
-
     /**
      * Create a new filter instance.
      *
@@ -27,7 +26,7 @@ class CheckAdwordsReferral
      */
     public function handle($request, Closure $next)
     {
-        if ($request->has('glcid')) {
+        if ($request->has('gclid')) {
             Session::put('came_from_adwords', 1);
         }
 
