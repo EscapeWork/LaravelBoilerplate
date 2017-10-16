@@ -54,7 +54,7 @@ App.Contact = function(form, options, callback) {
                 App.Loader.hide();
 
                 if (data !== undefined) {
-                    App.Messages.errors(data.responseJSON);
+                    App.Messages.errors(data.responseJSON.errors);
                 }
             }
         })
